@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Carrousel</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<style type="text/css">	
+	</style>
+</head>
+<body>
+	<div id="carr-container" class="blue">
+		<div class=" slider your-class">
+			<div><img class="" src="http://kenwheeler.github.io/slick/img/lazyfonz1.png" /></div>
+			<div id="popupVid"><iframe width="560" height="315" src="//www.youtube.com/embed/-AklUIKneI0?enablejsapi=1" frameborder="0" allowfullscreen></iframe></div>
+			<div><h3>Putos todos</h3></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	
+	<script type="text/javascript">
+		var the_slick;
+		$(document).ready(function(){
+			the_slick = $('.your-class').slick({
+				'onAfterChange':function () {
+					var cursl = the_slick.slickCurrentSlide();
+					if (cursl == 1) {
+						toggleVideo();
+					}
+					else {
+						toggleVideo('hide');
+					}
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript">
+
+	function toggleVideo(state) {
+	    // if state == 'hide', hide. Else: show video
+	    var div = document.getElementById("popupVid");
+	    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+	    // div.style.display = state == 'hide' ? 'none' : '';
+	    func = state == 'hide' ? 'pauseVideo' : 'playVideo';
+	    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+	}
+	
+	</script>
+</body>
+</html>
