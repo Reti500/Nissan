@@ -2,9 +2,9 @@
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  width: 375px; height: 335px;
+  width: 375px; height: 335px; 
   max-width: 375px;
-  max-height: 335px;
+  max-height: 335px; /*Sustuir medidas por dimensiones de la imagen*/
 
 }
 .option, .option img { width: 100%; height: 100%; }
@@ -14,6 +14,9 @@
   /* arctan(27 / 40) = 34.01935deg 
    * need to skew by 90deg - 34.01935deg = 55.98065deg
   */
+  /* Se sustituye el 27 por el alto de la imagen, 
+  y el 40 por el ancho. Tangente inversa de la división
+  y se resta de 90 para obtener los grados. */
   transform: skewX(-48.224deg);
 }
 .option:first-child {
