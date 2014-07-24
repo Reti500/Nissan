@@ -1,10 +1,11 @@
-
 .pageOption {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
   width: 375px; height: 335px;
+  max-width: 375px;
   max-height: 335px;
+
 }
 .option, .option img { width: 100%; height: 100%; }
 .option {
@@ -13,20 +14,20 @@
   /* arctan(27 / 40) = 34.01935deg 
    * need to skew by 90deg - 34.01935deg = 55.98065deg
   */
-  transform: skewX(-55.98deg);
+  transform: skewX(-48.224deg);
 }
 .option:first-child {
-  left: 0;
+  left: 0px;
   transform-origin: 100% 0;
 }
 .option:last-child {
-  right: 0;
+  right: 1px;
   transform-origin: 0 100%;
 }
-.option img { opacity: .75; transition: .5s; }
+.option img { opacity: .7; transition: .5s; }
 .option img:hover { opacity: 1; }
 .option img, .option:after {
-  transform: skewX(55.98deg);
+  transform: skewX(48.224deg);
   transform-origin: inherit;
 }
 .option:after {
