@@ -24,7 +24,7 @@
   transform-origin: 100% 0;
 }
 .option:last-child {
-  right: 1px;
+  right: -1px;
   transform-origin: 0 100%;
 }
 .option img { opacity: .7; transition: .5s; }
