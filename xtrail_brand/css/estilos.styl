@@ -1,3 +1,4 @@
+/*me.albaching@gmail.com*/
 /*GENERAL Y CATEGORIAS*/
 body
 	margin 0
@@ -28,6 +29,7 @@ p
 
 
 #imgder
+	position relative
 	text-align center
 	margin 0 .1px 0 0
 	padding 0
@@ -35,6 +37,7 @@ p
 	width 524px
 
 #imgizq
+	position relative 
 	text-align center
 	margin 0 -1px 0 0 
 	padding 0
@@ -43,6 +46,10 @@ p
 
 /*Agregar background-image o pensar en cómo resolver distribución
 de la imagen que quieren*/
+#el360
+	position relative
+	background-image url(img/fondo-360.jpg)
+
 #head360
 	text-align left
 	padding-bottom 0.25%
@@ -61,15 +68,17 @@ de la imagen que quieren*/
 /*HASTA AQUI, TAMPOCO SE QUIERA PASAR DE VERGA*/
 
 #destruir
+	z-index 8
+	position relative
 	margin 0px auto
 	height 892px
 	width 1048px
 	color DarkRed
 	background-repeat no-repeat
-	padding 0 0 20px 0
+	padding 0
 
 #franja 
-	opacity .5
+	opacity 1
 	z-index 10
 	position absolute
 
@@ -135,10 +144,12 @@ de la imagen que quieren*/
 	height auto 
 
 .contimg
+	z-index 6
+	position absolute 
 	margin 0 auto
 	width auto
 	text-align center
-	display inline-flex
+	display flex
 	padding 0
 
 .botoninicio
