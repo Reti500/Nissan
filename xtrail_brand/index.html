@@ -16,7 +16,7 @@
 			AQUI VAN LAS PUTAS FOTOS EN TRIANGULO
 		
 		<!--IMAGENES EN TRIANGULO-->
-			<section class="contimg">
+			<section id="cliches" class="contimg">
 				<div id="imgizq">
 					<div class='pageOption'>
 						<a href='#' class='option'>
@@ -61,8 +61,8 @@
 					<h2>NO ES LO QUE SE VE, <br>ES TODO LO QUE HAY DETRÁS</h2>
 					<article>Cuando tantos clichés tratan de invadir tu estilo de vida, sólo a ti te <br>corresponde acabar con ellos. Elimínalos dando clic y descubre la <br>transformación absoluta del Totalmente Nuevo Nissan X-TRAIL.</article>
 					<div>
-						<button class='botoninicio'>Destrúyelos</button>
-						<button class='botoninicio'>Continúa al 360°</button>
+						<button id='btn_destroy' class='botoninicio'>Destrúyelos</button>
+						<button id='btn_360' class='botoninicio'>Continúa al 360°</button>
 					</div>
 				</div>
 			</section>
@@ -157,5 +157,18 @@
 		</footer>
 <!--TERMINA EL FOOTER-->
 	</div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#btn_destroy').click(function(event) {
+			$('#destruir').fadeOut(500);
+		});
+		$('#btn_360').click(function(event) {
+			$('#destruir').fadeOut(500);
+			$('#cliches').fadeOut(500);
+			$('#el360').fadeIn(500);
+		});
+	});
+	</script>
 </body>
 </html>
