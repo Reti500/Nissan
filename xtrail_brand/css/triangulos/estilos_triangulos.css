@@ -1,10 +1,11 @@
-
 .pageOption {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  width: 375px; height: 335px;
-  max-height: 335px;
+  width: 524px; height: 446px; 
+  max-width: 524px;
+  max-height: 446px; /*Sustuir medidas por dimensiones de la imagen*/
+
 }
 .option, .option img { width: 100%; height: 100%; }
 .option {
@@ -13,20 +14,23 @@
   /* arctan(27 / 40) = 34.01935deg 
    * need to skew by 90deg - 34.01935deg = 55.98065deg
   */
-  transform: skewX(-55.98deg);
+  /* Se sustituye el 27 por el alto de la imagen, 
+  y el 40 por el ancho. Tangente inversa de la división
+  y se resta de 90 para obtener los grados. */
+  transform: skewX(49.5974deg);
 }
 .option:first-child {
-  left: 0;
+  left: 0px;
   transform-origin: 100% 0;
 }
 .option:last-child {
-  right: 0;
+  right: -1px;
   transform-origin: 0 100%;
 }
-.option img { opacity: .75; transition: .5s; }
+.option img { opacity: .7; transition: .5s; }
 .option img:hover { opacity: 1; }
 .option img, .option:after {
-  transform: skewX(55.98deg);
+  transform: skewX(-49.5974deg);
   transform-origin: inherit;
 }
 .option:after {

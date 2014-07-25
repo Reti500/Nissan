@@ -21,28 +21,63 @@ p
 
 /*ID's*/
 #home
+	padding-bottom 20px 
 	background-color DarkRed
 	color Pink
 	text-align center
 
 
-#imgizq
-	text-align center
-	margin 0 -2.5px
-	padding 0
-	height 680px	
-	width 380px
-
 #imgder
 	text-align center
-	margin 0 -2.5px
+	margin 0 .1px 0 0
 	padding 0
-	height 680px	
-	width 380px
+	height 892px	
+	width 524px
 
-#comparte
-	background-color blue 
-	color LightBlue
+#imgizq
+	text-align center
+	margin 0 -1px 0 0 
+	padding 0
+	height 892px	
+	width 524px
+
+/*Agregar background-image o pensar en cómo resolver distribución
+de la imagen que quieren*/
+#head360
+	text-align left
+	padding-bottom 0.25%
+
+#contenido360
+	height 700px
+	width 100%
+	margin 0 auto
+	background-color brown 
+
+
+/*BORRAR ESTA MAMADA AL INSERTAR EL 360*/
+#contenido360 p
+	padding-top 20%
+	text-transform capitalize
+/*HASTA AQUI, TAMPOCO SE QUIERA PASAR DE VERGA*/
+
+#destruir
+	margin 0px auto
+	height 892px
+	width 1048px
+	color DarkRed
+	background-image url('../img/pleca00.png')
+	background-repeat no-repeat
+	padding 0 0 20px 0
+
+#contdestruir h2
+	padding 30% 0 0 0
+
+#contdestruir article
+	padding 2% 0 0 0
+
+#contdestruir div
+	padding 7.5% 0 0 0
+
 	
 #bloq11
 	margin 0 -2px 0 0
@@ -64,7 +99,6 @@ p
 #bloq22
 	margin 0 0 0 -2px
 	width 613px
-
 #bloq31
 	margin 0 -2px 0 0
 	width 270px
@@ -76,6 +110,13 @@ p
 	margin 0 0 0 -2.5px
 	width 436px
 	background-color green
+
+#comparte
+	background-color blue 
+	color LightBlue
+	margin 0 auto
+	padding 0
+
 
 
 /*CLASES*/
@@ -90,9 +131,12 @@ p
 	width auto
 	text-align center
 	display inline-flex
+	padding 0
 
-.img 
-	margin -2.5px 0
+.botoninicio
+	margin 0 5%
+	
+
 
 .bloq
 	width 100%
@@ -121,8 +165,15 @@ p
 	margin 0
 	padding 0
 
+.twitter:after
+	content attr(class)
+	display flex
+.facebook:after
+	content attr(class)
+	display flex
+
 .elfoot
-	margin 0 15px
-	display inline-block 
+	margin 2% 5%
+	display inline-block
 	font-size 1.5em
 
