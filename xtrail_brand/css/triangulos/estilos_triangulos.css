@@ -17,7 +17,7 @@
   /* Se sustituye el 27 por el alto de la imagen, 
   y el 40 por el ancho. Tangente inversa de la división
   y se resta de 90 para obtener los grados. */
-  transform: skewX(-49.5974deg);
+  transform: skewX(49.5974deg);
 }
 .option:first-child {
   left: 0px;
@@ -30,7 +30,7 @@
 .option img { opacity: .7; transition: .5s; }
 .option img:hover { opacity: 1; }
 .option img, .option:after {
-  transform: skewX(49.5974deg);
+  transform: skewX(-49.5974deg);
   transform-origin: inherit;
 }
 .option:after {
