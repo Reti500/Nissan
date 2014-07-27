@@ -2,7 +2,7 @@ var map;
 
 function initialize() {
 	var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
-	
+
 	var mapOptions = {
 		zoom: 4,
 		disableDefaultUI: true,
@@ -11,10 +11,14 @@ function initialize() {
 
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-	var marker = new google.maps.Marker({
-		position: myLatlng,
+	var marker = addMarker(myLatlng, "Marcador uno");
+}
+
+function addMarker(latlng, title){
+	return new google.maps.Marker({
+		position: latlng,
 		map: map,
-		title: 'Hello World!'
+		title: title
 	});
 }
 
