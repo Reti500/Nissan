@@ -27,8 +27,8 @@
   right: -1px;
   transform-origin: 0 100%;
 }
-.option img { opacity: .7; transition: .5s; }
-.option img:hover { opacity: 1; }
+.option img { opacity: .5; transition: .8s; }
+.option img:hover { opacity: 1;}
 .option img, .option:after {
   transform: skewX(-49.5974deg);
   transform-origin: inherit;
