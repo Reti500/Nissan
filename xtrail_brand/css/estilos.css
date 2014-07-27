@@ -2,6 +2,7 @@ body{margin:0;padding:0}
 footer{margin:0;padding:0;background-color:#808080;font-size:.75em;min-height:67px}
 h1{margin:1% 10%}
 p{margin:0 10%;padding:1%}
+video{margin:0 10%}
 #home{padding-bottom:20px;background-color:Black;color:Pink;text-align:center;height:892px}
 #imgder{position:relative;text-align:center;margin:0 .1px 0 0;padding:0;height:892px;width:524px}
 #imgizq{position:relative;text-align:center;margin:0 -1px 0 0;padding:0;height:892px;width:524px}
@@ -24,6 +25,7 @@ p{margin:0 10%;padding:1%}
 #bloq31{margin:0 -2px 0 0;width:270px;background-color:#ffa500}
 #bloq32{margin:0 -2px;width:342px}
 #bloq33{margin:0 0 0 -2.5px;width:436px;background-color:#008000}
+#videos{width:1048px;height:892px;background-color:#000;z-index:1}
 #comparte{background-color:#00f;color:LightBlue;margin:0 auto;padding:0}
 .seccion{margin:0 auto;padding:0;width:1048px;height:auto}
 .contimg{z-index:6;position:absolute;margin:0 auto;width:auto;text-align:center;display:flex;padding:0}
@@ -36,4 +38,5 @@ p{margin:0 10%;padding:1%}
 .facebook:after{content:attr(class);display:flex}
 .elfoot{margin:2% 5%;display:inline-block;font-size:1.5em}
 .noMostrar{padding-top:24%}
+.footLink{text-decoration:none}
 #mySpriteSpin{margin:0 auto}
