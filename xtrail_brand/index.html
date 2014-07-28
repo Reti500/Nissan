@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/estilos.css">
 		<link rel="stylesheet" href="css/triangulos/estilos_triangulos.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css">
 		<title>X-trail Brand Channel</title>
 	</head>
 	<body>
@@ -152,21 +153,23 @@
 				<a href="http://www.nissan.com.mx/" target="_blank" class="footLink">
 					<li class="elfoot">Nissan México</li>
 				</a>
-				<a href="" class="footLink">
-					<li class="elfoot">Aviso de Privacidad</li>
+				<a id="lpriv" href="legales.html">
+					<li id="legales" class="elfoot">Aviso de Privacidad</li>
 				</a>
 					<li class="elfoot" class="footLink">Nissan 2014</li>
 			</ul>
 		</footer>
 		<!--TERMINA EL FOOTER-->
-
-		<!-- JALAR AQUI EL ARCHIVO LEGALES -->
-		<div id="legales">
-				
-		</div>
+		<!-- JALAR AQUI EL ARCHIVO LEGALES
+		<div id="legales" class="fancybox.ajax">
+		</div> -->
+		
 	</div>
 
+	
+
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 	<script type='text/javascript' src='js/spritespin.min.js' ></script>
 	<script type='text/javascript'>
 	$("#mySpriteSpin").spritespin({
@@ -222,6 +225,11 @@
 			$('#el360').fadeIn(500);
 		});
 		$('#el360').fadeOut();
+		
+		$("#lpriv").magnificPopup({
+			type: 'ajax'
+		});
+		// $('#legales').load('legales.html');
 	});
 	</script>
 </body>
