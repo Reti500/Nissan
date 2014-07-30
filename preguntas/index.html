@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Preguntas</title>
+	<script src='//code.jquery.com/jquery-1.11.1.min.js' type='text/javascript'></script>
+	<style type="text/css">
+	.p {
+		color: red;
+	}
+	</style>
+</head>
+<body>
+	<div id="preguntas">
+		<input id="words" type="text" >
+		<button>Buscar</button>
+		<div id="cuadros"></div>
+	</div>
+	<script type="text/javascript">
+		var the_qs;
+		function contains_in_tag(obj, w) {
+			var tags = obj.tags.trim().split(",");
+			for (var i = 0; i < tags.length; i++) {
+				var tag = tags[i].toLowerCase();
+				if (tag == w.toLowerCase()) {
+					return true;
+				}
+			}
+			return false;
+		}
+		function find(q) {
+			var items = [];
+			var words = q.trim().split(",");
+			$.each( the_qs, function( key, val ) {
+				for (var i = 0; i < words.length; i++) {
+					var word = words[i];
+					if (contains_in_tag(val, word)) {
+						items.push( "<li class='p'>" + val.p + "</li>" );
+						items.push( "<li id='" + key + "'>" + val.r + "</li>" );
+						continue;
+					}
+				};
+				
+			});
+
+			$( "<ul/>", {
+				"class": "my-new-list",
+				html: items.join( "" )
+			}).appendTo( "body" );
+		}
+		$('#preguntas > button').click(function(event) {
+			var q = $('#words').val();
+			if (the_qs == null) {
+				$.getJSON( "inf/p.json", function( data ) {
+					the_qs = data;
+					find(q);
+				});
+			}
+			else {
+				find(q);
+			}
+		});
+	</script>
+</body>
+</html>
