@@ -1,0 +1,6 @@
+body{width:100%;*zoom:1;}
+body:before,body:after{content:"";display:table}
+body:after{clear:both}
+column-width 60,gutter-width 20,columns 12,body{margin-top:true;margin:0}
+.container{width:960px;max-width:960px;margin:0 auto}
+section{display:inline;float:left;overflow:hidden;width:940px;margin:0 10px;*width:940px -correction;*margin:0 10px -correction;margin:0;background-color:#000;color:#fff;height:800px}
