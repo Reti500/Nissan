@@ -1,19 +1,19 @@
 var soc_text = {
-	"#soc_text1":"@skks_sds1<br/><br/>"+
-				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
-				"knjkdsnfjkds",
-	"#soc_text2":"@skks_sds2<br/><br/>"+
-				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
-				"knjkdsnfjkds",
-	"#soc_text3":"@skks_sds3<br/><br/>"+
-				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
-				"knjkdsnfjkds",
-	"#soc_text4":"@skks_sds4<br/><br/>"+
-				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
-				"knjkdsnfjkds",
-	"#soc_text5":"@skks_sds5<br/><br/>"+
-				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
-				"knjkdsnfjkds",
+	"#soc_text1":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+	"#soc_text2":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+	"#soc_text3":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+	"#soc_text4":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+	"#soc_text5":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
 };
 function fill_social_data() {
 	for (var id in soc_text) {
