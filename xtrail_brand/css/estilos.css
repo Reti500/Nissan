@@ -46,7 +46,7 @@ button:hover{transition:.25s;border-style:solid;border-radius:.2;border-width:0;
 #contdestruir div{padding:7.5% 0 0 0}
 #bloq11{margin:0 -2px 0 0;background-image:url("../img/grid/grid1.png");min-height:309px;min-width:431px;background-size:cover}
 #bloq12{margin:0 -2px;background-image:url("../img/grid/grid2.png");background-size:auto;min-height:309px;min-width:290px}
-#bloq13{margin:0 0 0 -2.5px;background-image:url("../img/grid/grid3.png");min-height:309px;min-width:327px}
+#bloq13{margin:0 -2px 0 -2.5px;background-image:url("../img/grid/grid3.png");min-height:309px;min-width:327px}
 #bloq21{background-image:url("../img/grid/grid4.png");min-height:320px;min-width:435px}
 #bloq22{background-image:url("../img/grid/grid5.png");min-height:320px;min-width:613px}
 #bloq31{background-image:url("../img/grid/grid6.png");min-height:323px;min-width:270px}
