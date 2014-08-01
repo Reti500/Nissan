@@ -1,3 +1,25 @@
+var soc_text = {
+	"#soc_text1":"@skks_sds1<br/><br/>"+
+				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
+				"knjkdsnfjkds",
+	"#soc_text2":"@skks_sds2<br/><br/>"+
+				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
+				"knjkdsnfjkds",
+	"#soc_text3":"@skks_sds3<br/><br/>"+
+				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
+				"knjkdsnfjkds",
+	"#soc_text4":"@skks_sds4<br/><br/>"+
+				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
+				"knjkdsnfjkds",
+	"#soc_text5":"@skks_sds5<br/><br/>"+
+				"ndfskldsnfkl kdnsfkjsdnfknsd jkdnsfkjnds <br/> <br/>"+
+				"knjkdsnfjkds",
+};
+function fill_social_data() {
+	for (var id in soc_text) {
+		$(id).html(soc_text[id]);
+	}
+}
 $(document).ready(function() {
 	$("#mySpriteSpin").spritespin({
 		// path to the source images.
@@ -59,5 +81,6 @@ $(document).ready(function() {
 	// });
 	$('#carr > div').load('carrousel.html');
 
+	fill_social_data();
 	
 });
