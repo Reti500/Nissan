@@ -1,8 +1,13 @@
-body{margin:0;padding:0}
+@font-face{font-family:NissanAGBol;src:url("fonts/NissanAGBol")}
+@font-face{font-family:NissanAGBolExt;src:url("fonts/NissanAGBol")}
+@font-face{font-family:NissanAGReg;src:url("fonts/NissanAGBol")}
+body{margin:0;padding:0;background-color:#444;font-family:NissanAGBolExt}
 footer{margin:0;padding:0;background-color:#808080;font-size:.75em;min-height:67px}
 h1{margin:1% 10%}
 p{margin:0 10%;padding:1%}
 video{margin:0 10%}
+button{width:290px;height:40px;background-color:#c02c55;color:#fff;border:none;font-size:1.2em}
+button:hover{transition:.25s;border-style:solid;border-radius:.2;border-width:0;border-color:#fff;box-shadow:1px 1px .4px #fff,-1px -1px .4px #333}
 #home{padding-bottom:20px;background-color:Black;color:Pink;text-align:center;height:932px}
 #imgder{position:relative;text-align:center;margin:0 .1px 0 0;padding:0;height:892px;width:524px}
 #imgizq{position:relative;text-align:center;margin:0 -1px 0 0;padding:0;height:892px;width:524px}
@@ -10,7 +15,7 @@ video{margin:0 10%}
 #head360{text-align:left;padding-bottom:.25%}
 #headcomparte{position:relative;margin:0;padding:0}
 #contenido360{height:700px;width:100%;margin:0 auto}
-#destruir{z-index:8;position:absolute;margin:0 auto;height:892px;width:1048px;color:DarkRed;background-repeat:no-repeat;padding:0}
+#destruir{z-index:8;position:absolute;margin:0 auto;height:892px;width:1048px;color:#fff;background-repeat:no-repeat;padding:0}
 #franja{opacity:1;z-index:10;position:absolute}
 #franja img{opacity:.8}
 #contdestruir{z-index:12;position:relative}
