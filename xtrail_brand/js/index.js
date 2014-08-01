@@ -89,6 +89,11 @@ $(document).ready(function() {
 	$("#lpriv").magnificPopup({
 		type: 'ajax'
 	});
+	$('.close').click(function() {
+    	$('#carr').fadeOut(500);
+    	$('#el360').fadeIn(500);
+    	$('close').unbind('click');
+    });
 	$('.option').magnificPopup({
 		callbacks: {
 		    open: function() {
