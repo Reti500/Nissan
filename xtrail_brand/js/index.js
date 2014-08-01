@@ -70,8 +70,43 @@ $(document).ready(function() {
 		$('#cliches').fadeOut(500);
 		$('#el360').fadeIn(500);
 	});
+	$('#volver360').click(function(event) {
+		$('#destruir').fadeIn(500);
+		$('#cliches').fadeIn(500);
+		$('#el360').fadeOut(500);
+	});
+	$('#galeria360').click(function(event) {
+		// $.magnificPopup.open({
+		// 	items: {
+		// 		src: 'carrousel.html',
+		// 		type: 'ajax'
+		// 	},
+		// });
+		// $.get('carrousel.html', function(result){
+		//     // $result = $(result);
+
+		//     $.magnificPopup.open({
+		// 		items: {
+		// 			src: result,
+		// 			type: 'inline'
+		// 		},
+		// 	});
+		// }, 'html');
+		$('#carr').fadeIn(500);
+		// $('#carr').mouseleave(function(){  
+	 //        var thisUI = $(this);
+	 //        $('html').click(function(){
+	 //                thisUI.hide();
+	 //            $('html').unbind('click');
+	 //        });
+	 //    });
+	    $('.close').click(function() {
+	    	$('#carr').fadeOut(500);
+	    	$('close').unbind('click');
+	    });
+	});
 	$('#el360').fadeOut();
-	
+	$('#carr').fadeOut();
 	$("#lpriv").magnificPopup({
 		type: 'ajax'
 	});
@@ -79,7 +114,7 @@ $(document).ready(function() {
 	// $('.option').click(function(event) {
 	// 	$('#cliches').fadeOut(500);
 	// });
-	$('#carr > div').load('carrousel.html');
+	// $('#carr > div').load('carrousel.html');
 
 	fill_social_data();
 	
