@@ -1,0 +1,44 @@
+{
+	messages: [
+		{
+			usuario:'Nissan',
+			message:'Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles.',
+			red_social:''
+		},
+		{
+			usuario:'Nissan',
+			message:'Erick ha descubierto un nuevo significado de la palabra felicidad. Gracias por compartir.',
+			red_social:''
+		},
+		{
+			usuario:'Nissan',
+			message:'Otra manera de vivir el viaje te espera al interior de Nissan PATHFINDER. Observa, libérate.',
+			red_social:''
+		},
+		{
+			usuario:'Nissan',
+			message:'Tecnología inteligente que permite regenerar energía para recorrer más kilómetros con la misma potencia. ',
+			red_social:''
+		},
+		{
+			usuario:'@Nissan_mx',
+			message:'Si el auto es una extensión de tu personalidad. ¿Qué modelo Nissan te define?',
+			red_social:''
+		},
+		{
+			usuario:'@Nissan_mx',
+			message:'Llegó el momento de recorrer los rincones del Centro Histórico de la bella ciudad de Guadalajara. #SentraExperience. http://goo.gl/8K4N0O ',
+			red_social:''
+		},
+		{
+			usuario:'@Nissan_mx',
+			message:'RT @Alexmartagonr: Y ya estrenando mi @Nissan_mx ☺ | Excelentes noticias, Alex. ¿Qué modelo estás estrenando? Comparte una fotografía.',
+			red_social:''
+		},
+		{
+			usuario:'@Nissan_mx',
+			message:'Un universo de posibilidades que te sitúan en el lugar indicado. Elige la ruta perfecta y disfruta el trayecto. ',
+			red_social:''
+		},
+	]
+}

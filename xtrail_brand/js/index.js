@@ -54,9 +54,10 @@ $(document).ready(function() {
 		type: 'ajax'
 	});
 
-	$('.option').click(function(event) {
-		$('#cliches').fadeOut(500);
-	});
+	// $('.option').click(function(event) {
+	// 	$('#cliches').fadeOut(500);
+	// });
 	$('#carr > div').load('carrousel.html');
+
 	
 });
