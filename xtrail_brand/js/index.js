@@ -57,6 +57,6 @@ $(document).ready(function() {
 	$('.option').click(function(event) {
 		$('#cliches').fadeOut(500);
 	});
-	// $('#legales').load('legales.html');
+	$('#carr > div').load('carrousel.html');
 	
 });
