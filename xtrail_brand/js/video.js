@@ -23,8 +23,8 @@ function onYouTubeIframeAPIReady() {
 	for (var i in playersIDs) {
 		var pid = playersIDs[i];
 		players[i] = new YT.Player(i, {
-	        height: '390',
-	        width: '640',
+	        height: '585',
+	        width: '960',
 	        videoId: pid.yid,
 	        events: {
 	            'onReady': onPlayerReady,

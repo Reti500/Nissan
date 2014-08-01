@@ -1,3 +1,25 @@
+var soc_text = {
+	"#soc_text1":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+	"#soc_text2":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+	"#soc_text3":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+	"#soc_text4":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+	"#soc_text5":"@Nissan<br/><br/>"+
+				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+				"",
+};
+function fill_social_data() {
+	for (var id in soc_text) {
+		$(id).html(soc_text[id]);
+	}
+}
 $(document).ready(function() {
 	$("#mySpriteSpin").spritespin({
 		// path to the source images.
@@ -48,16 +70,75 @@ $(document).ready(function() {
 		$('#cliches').fadeOut(500);
 		$('#el360').fadeIn(500);
 	});
+	$('#volver360').click(function(event) {
+		$('#destruir').fadeIn(500);
+		$('#cliches').fadeIn(500);
+		$('#el360').fadeOut(500);
+	});
+	$('#galeria360').click(function(event) {
+		// $.magnificPopup.open({
+		// 	items: {
+		// 		src: 'carrousel.html',
+		// 		type: 'ajax'
+		// 	},
+		// });
+		// $.get('carrousel.html', function(result){
+		//     // $result = $(result);
+
+		//     $.magnificPopup.open({
+		// 		items: {
+		// 			src: result,
+		// 			type: 'inline'
+		// 		},
+		// 	});
+		// }, 'html');
+		$('#carr').fadeIn(500);
+		// $('#carr').mouseleave(function(){  
+	 //        var thisUI = $(this);
+	 //        $('html').click(function(){
+	 //                thisUI.hide();
+	 //            $('html').unbind('click');
+	 //        });
+	 //    });
+	    $('.close').click(function() {
+	    	$('#carr').fadeOut(500);
+	    	$('close').unbind('click');
+	    });
+	});
 	$('#el360').fadeOut();
-	
+	$('#carr').fadeOut();
 	$("#lpriv").magnificPopup({
 		type: 'ajax'
 	});
+	$('.option').magnificPopup({
+		callbacks: {
+		    open: function() {
+		      
+		      
+		     // this part overrides "close" method in MagnificPopup object
+		      $.magnificPopup.instance.close = function () {
+		      
+		          $('#destruir').fadeOut(500);
+					$('#cliches').fadeOut(500);
+					$('#el360').fadeIn(500);
+		      
+		           // "proto" variable holds MagnificPopup class prototype
+		           // The above change that we did to instance is not applied to the prototype, 
+		           // which allows us to call parent method:
+		           $.magnificPopup.proto.close.call(this);
+		      }; 
+		      // you may override any method like so, just note that it's applied globally
+		      
+		    }
+		  }
+	});
+
 
 	// $('.option').click(function(event) {
 	// 	$('#cliches').fadeOut(500);
 	// });
-	$('#carr > div').load('carrousel.html');
+	// $('#carr > div').load('carrousel.html');
 
+	fill_social_data();
 	
 });
