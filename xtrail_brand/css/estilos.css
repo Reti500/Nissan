@@ -8,7 +8,7 @@ video{margin:0 10%}
 #imgizq{position:relative;text-align:center;margin:0 -1px 0 0;padding:0;height:892px;width:524px}
 #el360{position:absolute;width:1048px}
 #head360{text-align:left;padding-bottom:.25%}
-#headcomparte{position:relative}
+#headcomparte{position:relative;margin:0;padding:0}
 #contenido360{height:700px;width:100%;margin:0 auto}
 #destruir{z-index:8;position:absolute;margin:0 auto;height:892px;width:1048px;color:DarkRed;background-repeat:no-repeat;padding:0}
 #franja{opacity:1;z-index:10;position:absolute}
@@ -17,25 +17,19 @@ video{margin:0 10%}
 #contdestruir h2{padding:30% 0 0 0}
 #contdestruir article{padding:2% 0 0 0}
 #contdestruir div{padding:7.5% 0 0 0}
-#bloq11{margin:0 -2px 0 0;width:425px;max-width:425px}
-#bloq12{margin:0 -2px;width:290px;background-color:#ffa500}
-#bloq13{margin:0 0 0 -2.5px;width:333px;background-color:#008000}
-#bloq21{margin:0 -2px 0 0;width:435px;background-color:#008000}
-#bloq22{margin:0 0 0 -2px;width:613px}
-#bloq31{margin:0 -2px 0 0;width:270px;background-color:#ffa500}
-#bloq32{margin:0 -2px;width:342px}
-#bloq33{margin:0 0 0 -2.5px;width:436px;background-color:#008000}
+#bloq11{margin:0 -2px 0 0}
+#bloq12{margin:0 -2px}
+#bloq13{margin:0 0 0 -2.5px}
+#bloq32{margin:-80px -2px 0 -3.5px !important}
 #videos{width:1048px;height:892px;background-color:#000;z-index:1}
 #comparte{position:inline-flex;color:LightBlue;margin:0 auto;padding:0;z-index:10}
 .seccion{margin:0 auto;padding:0;width:1048px;height:auto}
 .contimg{z-index:6;position:absolute;margin:0 auto;width:auto;text-align:center;display:flex;padding:0}
 .botoninicio{margin:0 5%}
-.bloq{width:100%;height:auto;margin:-4.5px 0;padding:0}
-.bloq1{display:inline-flex;height:280px;max-height:280px;margin:0;padding:0}
-.bloq2{display:inline-flex;height:275px;max-height:275px;margin:0;padding:0}
-.bloq3{display:inline-flex;height:287px;max-height:287px;margin:0;padding:0}
-.twitter:after{content:attr(class);display:flex}
-.facebook:after{content:attr(class);display:flex}
+.bloq{width:1048px;height:auto;margin:-5px 0;padding:0;background-color:#000}
+.bloq1{display:inline-flex;margin:0;padding:0;z-index:8}
+.bloq2{display:inline-flex;margin:-50px 0 0 -3.5px !important;padding:0;z-index:6;position:relative}
+.bloq3{display:inline-flex;margin:-80px 0 0 -3.5px !important;padding:0;z-index:4;position:relative}
 .elfoot{margin:2% 5%;display:inline-block;font-size:1.5em}
 .noMostrar{padding-top:24%}
 .footLink{text-decoration:none}
