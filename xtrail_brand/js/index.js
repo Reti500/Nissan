@@ -77,6 +77,7 @@ $(document).ready(function() {
 	});
 	$('#galeria360').click(function(event) {
 		$('#carr').fadeIn(500);
+		$('#el360').fadeOut();
 	    $('.close').click(function() {
 	    	$('#carr').fadeOut(500);
 	    	$('close').unbind('click');
@@ -93,6 +94,10 @@ $(document).ready(function() {
     	$('#carr').fadeOut(500);
     	$('#el360').fadeIn(500);
     	$('close').unbind('click');
+    });
+    $('#botoncarr').click(function() {
+    	$('#carr').fadeOut(500);
+    	$('#el360').fadeIn(500);
     });
 	$('.option').magnificPopup({
 		callbacks: {
