@@ -32,7 +32,12 @@ function onYouTubeIframeAPIReady() {
 	        }
 	    });
 	};
-    
+    the_slick = $('.your_class').slick({
+		'onAfterChange':function () {
+			var cursl = the_slick.slickCurrentSlide();
+			stopOthersVideos(cursl);
+		}
+	});
 }
 
 // 4. The API will call this function when the video player is ready.

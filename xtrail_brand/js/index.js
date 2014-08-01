@@ -76,37 +76,16 @@ $(document).ready(function() {
 		$('#el360').fadeOut(500);
 	});
 	$('#galeria360').click(function(event) {
-		// $.magnificPopup.open({
-		// 	items: {
-		// 		src: 'carrousel.html',
-		// 		type: 'ajax'
-		// 	},
-		// });
-		// $.get('carrousel.html', function(result){
-		//     // $result = $(result);
-
-		//     $.magnificPopup.open({
-		// 		items: {
-		// 			src: result,
-		// 			type: 'inline'
-		// 		},
-		// 	});
-		// }, 'html');
 		$('#carr').fadeIn(500);
-		// $('#carr').mouseleave(function(){  
-	 //        var thisUI = $(this);
-	 //        $('html').click(function(){
-	 //                thisUI.hide();
-	 //            $('html').unbind('click');
-	 //        });
-	 //    });
 	    $('.close').click(function() {
 	    	$('#carr').fadeOut(500);
 	    	$('close').unbind('click');
 	    });
 	});
 	$('#el360').fadeOut();
-	$('#carr').fadeOut();
+	$('#destruir').fadeOut();
+	$('#cliches').fadeOut();
+	$('#carr').fadeIn();
 	$("#lpriv").magnificPopup({
 		type: 'ajax'
 	});
