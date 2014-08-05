@@ -21,8 +21,8 @@ var my_estados = {
 	"Mexico": [19.3253627,-99.6045803],
 	"Michoacan": [19.1535205,-101.9006079],
 	"Morelos": [18.7318963,-99.0633631],
-	"Nayarit": {},
-	"NuevoLeon": {},
+	"Nayarit": [21.8432765,-104.7403113],
+	"NuevoLeon": [25.4817892,-99.8141511],
 	"Oaxaca": {},
 	"Puebla": {},
 	"Queretaro": {},
@@ -74,7 +74,7 @@ function listar_estados(data){
 
 function initialize() {
 	var mapOptions = {
-		zoom: 10,
+		zoom: 4,
 		disableDefaultUI: true,
 		center: new google.maps.LatLng(19.3200988,-99.1521845)
 	}
