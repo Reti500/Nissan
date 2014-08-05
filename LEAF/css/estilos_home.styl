@@ -41,6 +41,7 @@
 
 column-width = 60px
 gutter-width = 20px
+columns = 12
 
 body 
 	font-family "Myriad Pro Regular" !important
@@ -54,10 +55,11 @@ section
 	color black
 
 header
-	min-height 100px
-	heigth 100px
-	max-height 100px
+	min-height 90px
+	heigth 90px
+	max-height 90px
 	color #f5f5f5
+	text-align left
 
 footer
 	min-height 100px
@@ -75,6 +77,9 @@ h1
 h4 
 	font-size 1em !important
 
+
+
+/*CLASES*/
 .container
 	width 100%
 	max-width 1600px
@@ -84,120 +89,320 @@ h4
 	display inline-block
 	margin 0 2%
 
-#contsecgif
-#secgif
-	height 700px
-	background-color #fff
+.carg 
+	column(6)
+	offset(6)
+	text-align center
+	margin-top 7%
 
-#sec01
-	height 700px
-	background-color #f5f5f5
-#contsec01
+
+.carruselseg
+	column(5)
+	offset(6)
+	text-align center 
+
+.elmenuf
+	display inline-block
+	margin 0 2%
+	color #fff 
+
+.pie 
+	display inline-block
+
+
+
+/*IDS*/
+/*Head*/
+#conthead
 	column(12)
-	margin 0 auto !important 
+	display inline-block
+
 #logo
 	column(1)
-#menup
-	column(10)
-	push(1)
-#menuli
-	column(11)
-	display inline-block 
-#imgauto1
-	margin 10% auto !important
-	column(10)
-	push(1)
-#textosmenup
-	column(10)
-	push(1)
 
+#menup
+	column(11)
+	offset(1)
+	text-align right 
+
+#menuli
+	display inline-block
+	width 100%
+
+/*Seccion 1 (100% eléctrico)*/
+#sec01
+	height 390px
+	background-color #f5f5f5
+#contsec01
+	column(10)
+	offset(1)
+	text-align center
+	h1
+		margin 15% 0 0 0
+
+#textosmenup 
+	column(10)
+	h1
+		margin 0 auto
+	p
+		margin 0 auto 	
+
+/*Primer vídeo*/
 #secfoto01
 	height 440px
 	width 100%
 	position relative
 	// background-image url('../img/LEAF-m/video.png')
 
+//Nuevo Gadget (Secc Mix con dos fondos e imagen sobre)
 #secmix
 	height 1050px
+
 #contsecmix
 	column(12)
+
 #mixsuperior
 	min-height 420px
 	height 420px
 	background-color #fff
-#iconmotor
-	margin 10% 0 0 0
-#imgsobre
+
+#nuevogad
+	text-align center
+	column(8)
+	offset(2)
+
+#txtgad
+	text-align center
 	column(10)
+	offset(1)
+
+#iconmotor
+	padding 12% 0 0 0
+
+#imgmotor
+	column(11)
+	offset(1)
+
+#titmotor
+	column(11)
+	offset(1)
+
+#txtmotor
+	column(6)
+	offset(1)
+
+#imgmateriales
+	column(2)
+	offset(1)
+
+#titmateriales
+	column(3)
+	offset(8)
+
+#txtmateriales
+	column(7)
+	offset(4)
+
+#imgsobre
+	column(12)
 	z-index 3200
 	position absolute
 	margin -15% 0px 0px 0px
 
 #imgsobre img
-	width 780px
+	column(10)
+	offset(2)
 
 #mixinferior
 	min-height 630px
 	height 630px
 	background-color #f5f5f5
+
 #iconmateriales
 	margin 10% 0 0 0
 
+//Video Youtube
+#youtube
+	height 670px
+	min-height 670px
+	border-bottom-style solid 
+	border-bottom-color #f5f5f5
+	border-bottom-width 5px 
+
+#contyoutube
+	column(12)
+	height 100%
+	background-color #fff 
+	p 
+		column(6)
+		offset(3)
+#videoyt
+	column(8)
+	offset(2)
+#videoyt iframe
+	margin 0 auto 
+	
+//Seccion Zero Emisiones
 #zero
-	height 660px
+	height 780px
+	min-height 780px
 	background-color #fff
 
-#interior
-	height 800px
-	background-image url('../img/LEAF-m/VolanteForradoEnPiel1.png')
-	color #fff
+#contseczero
+	column(12)
 
+#imgzero
+	column(4)
+	offset(4)
+	margin-top 7%
+
+#txtzero
+	text-align center
+	column(10)
+	offset(1)
+	margin-top 5%
+
+#triangulo
+	column(6)
+	offset(3)
+	margin-top 7%
+
+#lucesLED
+	text-align center
+	column(4)
+	offset(4)
+	margin-top 0
+
+//Fotota
 #secfoto02
 	height 800px
 	background-image url('../img/LEAF-m/CarParque.png')
 
-#ingenieria
-	height 800px
-	// background-image url('../img/LEAF-m/FotoGenerador.png')
-	position relative
-#ingenieria div 
-	position absolute
-	top 50%
-	left 50%
-	transform: translateX(-50%) translateY(-50%) !important
+//Gadgets
+#gadgets 
+	height 450px
+	min-height 450px
 
-#menusecu
-	height 440px
-	background-color #f5f5f5
+#contgad
+	column(12)
+
+#modob
+	text-align center
+	column(4)
+	offset(1)
+	margin-top 10%
+
+#modoeco
+	text-align center
+	column(4)
+	offset(2)
+	margin-top 10%
 
 #limpia
-	height 450px
-	background-color #c0dce8
+	height 365px
+	max-height 365px
+	background-image url('../img/Leaf-y/barra-azul.png')
+	background-size contain 
+	background-repeat no-repeat
+	margin 0 auto 
 
+#contseclimpia
+	text-align center 
+	column(12)
+
+#titlimpia
+	column(4)
+	offset(4)
+	margin-top 7%
+	
+#txtlimpia
+	column(6)
+	offset(3)
+
+//Cargadores y tipos de cargador 
 #cargadores
 	height 600px
 	background-image url('../img/Leaf-y/coche.png')
+	background-color #f5f5f5
 	background-repeat no-repeat
 	background-size contains
 
+#contcargadores
+	column(12)
+
+
+//Autonomia secc mini
 #autonomia
-	height 380px
+	height 390px
+	min-height 390px
 	background-color #fff
 
+#contauton
+	column(12)
+
+#imgauton
+	text-align center  
+	column(2)
+	offset(1)
+
+#imgauton img
+	margin-top 65%
+
+#textos
+	column(8)
+
+#titauton h2
+	margin-top 12%
+
+#txtauton p
+	margin-top 0
+
+
+//Video 
 #secfoto03
 	height 490px
 	background-image url('../img/Leaf-y/foto.png')
 
+
+//Seguridad y sistemas de protección
 #seguridad
 	height 760px
 	background-image url('../img/Leaf-y/llanta.png')
 	background-repeat no-repeat
 	background-size contains
 
+#contseg
+	column(12)
+
+#txtseg
+	column(6)
+	offset(6)
+
+//Video 
 #secfoto04
 	height 560px
 	background-image url('../img/LEAF-m/volante.png')
 
+//Footer 
+#contfoot
+	color #fff
+	column(12)
+	display inline-block
+
+#menufoot
+	column(6)
+	text-align left 
+	margin-top 4%
+#menufoot ul
+	column(5)
+	font-size 0.85em 
+	
+#sociales
+	column(4)
+	offset(1)
+	margin-top 3%
+#sociales ul 
+	column(4)
 #faq
 	height 800px
 	background-color #f5f5f5
