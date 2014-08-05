@@ -4,7 +4,37 @@ $(document).on('ready', init());
 
 var my_estados = {
 	"Aguascalientes":[22.0405661,-102.355039],
-	"BajaCalifornia":[30.359001, -115.0309215]
+	"BajaCalifornia":[30.359001, -115.0309215],
+	"BajaCaliforniaSur":[25.4362468,-112.3135794],
+	"Campeche":[19.3299855,-90.7905291],
+	"Coahuila":[27.2107094,-101.8919144],
+	"Colima":[19.0984307,-104.0888364],
+	"Chiapas":[16.2568741,-92.3009364],
+	"Chihuahua":[28.6722468,-106.186553],
+	"Sinaloa":[24.7541857,-107.4199704],
+	"DF":[19.3200988,-99.1521845],
+	"Durango": [24.5947192,-104.8405938],
+	"Guanajuato": [20.8757536,-100.8839802],
+	"Guerrero": [17.6009455,-100.0949411],
+	"Hidalgo": [20.4972412,-98.9243422],
+	"Jalisco": [20.8375717,-103.6022721],
+	"Mexico": [19.3253627,-99.6045803],
+	"Michoacan": [19.1535205,-101.9006079],
+	"Morelos": [18.7318963,-99.0633631],
+	"Nayarit": [21.8432765,-104.7403113],
+	"NuevoLeon": [25.4817892,-99.8141511],
+	"Oaxaca": {},
+	"Puebla": {},
+	"Queretaro": {},
+	"QuintanaRoo": {},
+	"SanLuisPotosi": {},
+	"Sonora": {},
+	"Tabasco": {},
+	"Tamaulipas": {},
+	"Tlaxcala": {},
+	"Veracruz": {},
+	"Yucatan": {},
+	"Zacatecas": {}
 }
 
 function init(){
@@ -44,7 +74,7 @@ function listar_estados(data){
 
 function initialize() {
 	var mapOptions = {
-		zoom: 10,
+		zoom: 4,
 		disableDefaultUI: true,
 		center: new google.maps.LatLng(19.3200988,-99.1521845)
 	}
