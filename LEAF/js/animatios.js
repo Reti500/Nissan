@@ -1,7 +1,8 @@
 $(document).on('ready', init());
 
-enchufe = "img/anim/anim_1/iconos2_0000";
-enchufe_num = 71;
+conexion = "img/anim/conexion/iconos 2_0036";
+autonomia = "img/anim/autonomia/iconos 2_00504"
+conexion_num = 71;
 
 var index = 0;
 
@@ -20,7 +21,7 @@ function init(){
 			console.log("over");
 			myAnim = setInterval(function(){
 				console.log("interval");
-				$("#imgmotor img").attr('src', nextImage());
+				$("#imgmotor img").attr('src', nextImage(conexion, conexion_num));
 			}, 42);
 		})
 		.mouseout(function(){
@@ -29,12 +30,12 @@ function init(){
 		});
 }
 
-function nextImage(){
-	if(index > enchufe_num){
+function nextImage(item, tam){
+	if(index > tam){
 		index = 0;
 	}
 
-	var str = enchufe + index + ".png";
+	var str = item + index + ".png";
 	console.log("cambiar por " + str);
 	index = index + 1;
 	return str;
