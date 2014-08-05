@@ -10,6 +10,14 @@
 				margin: 0px;
 				padding: 0px
 			}
+
+			#map-canvas{
+				z-index: 0;
+			}
+			#search{
+				z-index: 1;
+				float: left;
+			}
 		</style>
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -19,8 +27,6 @@
 		
 	</head>
 	<body>
-		<div id="map-canvas"></div>
-		</div>
 		<div>
 			<form name="form" id="search">
 				<select id="estados">
@@ -28,5 +34,8 @@
 				</select>
 			</form>
 		</div>
+		<div id="map-canvas"></div>
+		</div>
+		
 	</body>
 </html>

@@ -2,6 +2,11 @@ var map;
 
 $(document).on('ready', init());
 
+var my_estados = {
+	"Aguascalientes":[22.0405661,-102.355039],
+	"BajaCalifornia":[30.359001, -115.0309215]
+}
+
 function init(){
 	var estados;
 
@@ -14,12 +19,10 @@ function init(){
 		error: function(){console.log("Error");}
 	});
 
-	$("select #estados").change(function() {
-  		console.log("click");
-	});
-
-	$("#estados").click(function(){
-		console.log("·kbjnl");
+	$("#estados").live('change', function() {
+		estado = my_estados[$(this).val()];
+		console.log(estado);
+    	map.setCenter(new google.maps.LatLng(estado[0],estado[1]));
 	});
 
 }
@@ -30,7 +33,6 @@ function listar_estados(data){
 		$("#estados").append("<option value=" + key + ">" + key + "</option>");
 		
 		if(estados[key].Estaciones && estados[key].Estaciones.length > 0){
-			console.log("do");
 			for(var i=0; i<estados[key].Estaciones.length; i++){
 				addMarker(new google.maps.LatLng(estados[key].Estaciones[i].lat, estados[key].Estaciones[i].lgn), estados[key].Estaciones[i].lugar);
 			}
@@ -40,13 +42,9 @@ function listar_estados(data){
 	}
 }
 
-$("select").change(function() {
-  		console.log("click");
-	});
-
 function initialize() {
 	var mapOptions = {
-		zoom: 12,
+		zoom: 10,
 		disableDefaultUI: true,
 		center: new google.maps.LatLng(19.3200988,-99.1521845)
 	}
