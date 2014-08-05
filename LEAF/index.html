@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/msnry.css">
 </head>
 <body>
+
 	<div class="container">
 		<header>
 			<!--Mide 100px y al inicio va sólo en blanco-->
@@ -120,9 +121,7 @@
 				<button></button>
 			</div>
 			
-			<div class="qcards">
-				
-			</div>
+			<div class="qcards"></div>
 		</div>
 		<footer>
 			<!--Mide 100px-->
@@ -138,10 +137,10 @@
 	<script type='text/javascript' src='js/spritespin.min.js' ></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		$('#sec_foto1 div').videoBG({
-			mp4:'http://localhost:8000/LEAF/videos/leaf_video_index_dos.webmsd.mp4',
-			ogv:'http://localhost:8000/LEAF/videos/leaf_video_index_dos.webmsd.ogv',
-			webm:'http://localhost:8000/LEAF/videos/leaf_video_index_dos.webmsd.webm',
+		$('#sec_foto1').videoBG({
+			mp4:'videos/leaf_video_index_dos.webmsd.mp4',
+			ogv:'videos/leaf_video_index_dos.webmsd.ogv',
+			webm:'videos/leaf_video_index_dos.webmsd.webm',
 			poster:'img/LEAF-m/video.png',
 			scale:true,
 			loop: true,
@@ -211,7 +210,7 @@
 			// 	</div>
 			// </div> 
 			var root = document.createElement('div');
-			root.className = 'flip-container qcard';
+			root.className = 'flip-container qcard flipper';
 			// $p = $("<div class='flip-content'>" + 
 			// 			p + 
 			// 		"</div>");
@@ -237,19 +236,30 @@
 						r + 
 					"</div>");
 
-			$(root).append("<div class='flipper'>" + 
-								"<div class='front-flip'>" + 
-									"<div class='flip-content'>" + 
-									p + 
-									"</div>" +
+			$(root).append("<div class='front-flip'>" + 
+								"<div class='flip-content'>" + 
+								p + 
+								"</div>" +
+							"</div>" + 
+							"<div class='back-flip'>" +
+								"<img class='cerrarq' src='img/cerrarq.png'>"+
+								"<div class='flip-content'>" + 
+								r + 
 								"</div>" + 
-								"<div class='back-flip'>" +
-									"<div class='flip-content'>" + 
-									r + 
-									"</div>" + 
-								"</div>" + 
-							"</div>");
+							"</div>" );
+			// fixHeight(root);
+			var vmax = Math.max(r.length*0.6, p.length);
+			$(root).height(vmax);
+			$(root).children('.front-flip, .back-flip').height(vmax);
 			return {dom:root, height:$r.height()};
+		}
+		function vaciarGrid(listener) {
+			// $('.flip-container').hide(500, function() {
+			// 	$container.empty();
+			// 	listener();
+			// });
+			$container.empty().masonry( 'layout' );
+			listener();
 		}
 		function find(q) {
 			var items = [];
@@ -269,17 +279,35 @@
 				};
 				
 			});
-			$container.empty().masonry( 'layout' );
-			$container.append( items ).masonry( 'appended', items );
-			// for (var i = 0; i < items.length; i++) {
-			// 	var h = tams[i];
-			// 	$(items[i]).css('height',h);
-			// 	$(items[i]).children('.front-flip').css('height',h);
-			// 	$(items[i]).children('.back-flip').css('height',h);
-			// };
-			$container.masonry( 'layout' );
-			setFlipClick();
+			function llenarGrid() {
+				$container.append( items ).masonry( 'appended', items );
+				// for (var i = 0; i < items.length; i++) {
+				// 	var h = tams[i];
+				// 	$(items[i]).css('height',h);
+				// 	$(items[i]).children('.front-flip').css('height',h);
+				// 	$(items[i]).children('.back-flip').css('height',h);
+				// };
+				// $container.masonry( 'layout' );
+				var vmax = Math.max($container.height()+260, 800);
+				// $('#faq').height(vmax);
+				$('#faq').animate({
+					height:vmax
+				});
+				setFlipClick();
+			}
+			if ($container.children().length > 0) {
+				vaciarGrid(llenarGrid);
+			}
+			else {
+				llenarGrid();
+			}
 		}
+		$( "#words" ).keyup(function() {
+			var q = $('#words').val();
+			if (q.length == 0) {
+				vaciarGrid();
+			}
+		});
 		$('#caja > button').click(function(event) {
 			var q = $('#words').val();
 
