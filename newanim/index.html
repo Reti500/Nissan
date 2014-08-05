@@ -3,8 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>anim</title>
+	<style type="text/css">
+	img {
+		
+	}
+	</style>
 </head>
 <body>
-	
+	<img id="anim" src="img/conexion/conexion_00000.png" />
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript">
+
+	function numberFormat(number) {
+		if ((number/10) >= 1) {
+			return number.toString();
+		}
+		return '0'+number.toString();
+	}
+	function setAnim(elem, name, frames) {
+		function handlerHover() {
+			var hasFinished = false;
+			return function(a) {
+				if (a == true) {
+
+				}
+				else {
+
+				}
+			}
+		}
+		var hand = handlerHover();
+		$(elem).hover(function() {
+			var i=0;
+			function nextim() {
+				// alert(i);
+				console.log(i);
+				console.log('img/'+name+'/'+name+'_000'+numberFormat(i)+'.png');
+				$(elem).attr("src",'img/'+name+'/'+name+'_000'+numberFormat(i)+'.png');
+				i++;
+				if (i > frames) {
+					i=0;
+				}
+
+				setTimeout(function(){
+					nextim();
+				}, 20);
+			}
+			nextim();
+		});
+	}
+	$(document).ready(function() {
+		setAnim(document.querySelector('#anim'), 'conexion', 71);
+	});
+	</script>
+	<script type="text/javascript">
+	</script>
 </body>
 </html>
