@@ -10,11 +10,12 @@
 </head>
 <body>
 
-	<div id="preguntas">
+	<div id="faq">
 		<h1>Todo lo que quieres saber <br/>de Nissan LEAF®</h1>
 		<h4>Las nuevas tecnología conllevan mitos e inquietudes. <br/>Aquí se aclararán tus dudas.</h4>
-		<input id="words" type="text" >
-		<button>Buscar</button>
+		
+		<input id="words" type="text" placeholder="Escribe una pregunta o palabra relacionada con tu duda ">
+		<button><img src="img/LEAF-m/FotoGenerador.png"></button>
 		<div class="qcards">
 			
 		</div>
@@ -132,7 +133,7 @@
 			$container.masonry( 'layout' );
 			setFlipClick();
 		}
-		$('#preguntas > button').click(function(event) {
+		$('#faq > button').click(function(event) {
 			var q = $('#words').val();
 
 			if (the_qs == null) {

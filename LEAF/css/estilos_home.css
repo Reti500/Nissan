@@ -1,1 +1,246 @@
-body{width:100%;*zoom:1;}body:before,body:after{content:"";display:table}body:after{clear:both}body{margin-top:true;margin:0;width:100%}section{margin:0;color:#000}header{min-height:100px;heigth:100px;max-height:100px;color:#f5f5f5}footer{min-height:100px;height:100px;background-color:#00202e;color:#fff}.container{width:100%;max-width:1600px;margin:0 auto}.elemenup{display:inline-block;margin:0 2%}#contsecgif,#secgif{height:700px;background-color:#fff}#sec01{height:700px;background-color:#f5f5f5}#contsec01{display:inline;float:left;overflow:hidden;width:940.0000000000002px;margin:0 10.00000000000032px;*width:940.0000000000002px -correction;*margin:0 10.00000000000032px -correction;margin:0 auto !important}#logo{display:inline;float:left;overflow:hidden;width:60px;margin:0 10.00000000000032px;*width:60px -correction;*margin:0 10.00000000000032px -correction}#menup{display:inline;float:left;overflow:hidden;width:780px;margin:0 10.00000000000032px;*width:780px -correction;*margin:0 10.00000000000032px -correction;}#menuli{display:inline;float:left;overflow:hidden;width:859.9999999999998px;margin:0 10.00000000000032px;*width:859.9999999999998px -correction;*margin:0 10.00000000000032px -correction;display:inline-block}#imgauto1{margin:10% auto !important;display:inline;float:left;overflow:hidden;width:780px;margin:0 10.00000000000032px;*width:780px -correction;*margin:0 10.00000000000032px -correction;}#textosmenup{display:inline;float:left;overflow:hidden;width:780px;margin:0 10.00000000000032px;*width:780px -correction;*margin:0 10.00000000000032px -correction;}#secfoto01{height:440px;background-image:url("http://placehold.it/1600x440")}#secmix{height:1050px}#contsecmix{display:inline;float:left;overflow:hidden;width:940.0000000000002px;margin:0 10.00000000000032px;*width:940.0000000000002px -correction;*margin:0 10.00000000000032px -correction}#mixsuperior{min-height:420px;height:420px;background-color:#fff}#iconmotor{margin:10% 0 0 0}#imgsobre{display:inline;float:left;overflow:hidden;width:780px;margin:0 10.00000000000032px;*width:780px -correction;*margin:0 10.00000000000032px -correction;z-index:3200;position:absolute;margin:-15% 0 0 0}#mixinferior{min-height:630px;height:630px;background-color:#f5f5f5}#iconmateriales{margin:10% 0 0 0}#zero{height:660px;background-color:#fff}#interior{height:800px;background-color:#000;color:#fff}#secfoto02{height:800px;background-image:url("http://placehold.it/1600x800")}#ingenieria{height:800px;background-color:#fff}#menusecu{height:440px;background-color:#f5f5f5}#limpia{height:450px;background-color:#c0dce8}#cargadores{height:600px;background-color:#f5f5f5}#autonomia{height:380px;background-color:#fff}#secfoto03{height:490px;background-image:url("http://placehold.it/1600x490")}#seguridad{height:760px;background-color:#fff}#secfoto04{height:560px;background-image:url("http://placehold.it/1600x560")}#last{height:800px;background-color:#f5f5f5}
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+@font-face {
+  font-family: "NissanAGBold";
+  src: url("http://www.nissan.com.mx/fonts/nissanag-bold-webfont.eot?1397324400");
+  src: url("http://www.nissan.com.mx/fonts/nissanag-bold-webfont.eot?&1397324400#iefix") format('embedded-opentype'), url("http://www.nissan.com.mx/fonts/nissanag-bold-webfont.ttf?1397324400") format('truetype'), url("http://www.nissan.com.mx/fonts/nissanag-bold-webfont.woff?1397324400") format('woff'), url("http://www.nissan.com.mx/fonts/nissanag-bold-webfont.svg?1397324400#NissanAGBold") format('svg');
+}
+@font-face {
+  font-family: "NissanAGMedium";
+  src: url("http://www.nissan.com.mx/fonts/nissanag-medium-webfont.eot?1397324400");
+  src: url("http://www.nissan.com.mx/fonts/nissanag-medium-webfont.eot?&1397324400#iefix") format('embedded-opentype'), url("http://www.nissan.com.mx/fonts/nissanag-medium-webfont.ttf?1397324400") format('truetype'), url("http://www.nissan.com.mx/fonts/nissanag-medium-webfont.woff?1397324400") format('woff'), url("http://www.nissan.com.mx/fonts/nissanag-medium-webfont.svg?1397324400#NissanAGMedium") format('svg');
+}
+@font-face {
+  font-family: "NissanAGRegular";
+  src: url("http://www.nissan.com.mx/fonts/nissanag-regular-webfont.eot?1397324400");
+  src: url("http://www.nissan.com.mx/fonts/nissanag-regular-webfont.eot?&1397324400#iefix") format('embedded-opentype'), url("http://www.nissan.com.mx/fonts/nissanag-regular-webfont.ttf?1397324400") format('truetype'), url("http://www.nissan.com.mx/fonts/nissanag-regular-webfont.eot.woff?1397324400") format('woff'), url("http://www.nissan.com.mx/fonts/nissanag-regular-webfont.svg?1397324400#NissanAGRegular") format('svg');
+}
+@font-face {
+  font-family: "NissanAGMedExt";
+  src: url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.eot?1397324400");
+  src: url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.eot?&1397324400#iefix") format('embedded-opentype'), url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.ttf?1397324400") format('truetype'), url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.woff?1397324400") format('woff'), url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.svg?1397324400#NissanAGMedExt") format('svg');
+}
+body {
+  margin-top: true;
+  margin: 0;
+  width: 100%;
+  color: #000;
+  font-family: "NissanAGBold" !important;
+}
+section {
+  margin: 0;
+  color: #000;
+}
+header {
+  min-height: 100px;
+  heigth: 100px;
+  max-height: 100px;
+  color: #f5f5f5;
+}
+footer {
+  min-height: 100px;
+  height: 100px;
+  background-color: #00202e;
+  color: #fff;
+}
+a,
+a:hover,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.elemenup {
+  display: inline-block;
+  margin: 0 2%;
+}
+#contsecgif,
+#secgif {
+  height: 700px;
+  background-color: #fff;
+}
+#sec01 {
+  height: 700px;
+  background-color: #f5f5f5;
+}
+#contsec01 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940.0000000000002px;
+  margin: 0 10.00000000000032px;
+  *width: 940.0000000000002px -correction;
+  *margin: 0 10.00000000000032px -correction;
+  margin: 0 auto !important;
+}
+#logo {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 60px;
+  margin: 0 10.00000000000032px;
+  *width: 60px -correction;
+  *margin: 0 10.00000000000032px -correction;
+}
+#menup {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 780px;
+  margin: 0 10.00000000000032px;
+  *width: 780px -correction;
+  *margin: 0 10.00000000000032px -correction;
+}
+#menuli {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 859.9999999999998px;
+  margin: 0 10.00000000000032px;
+  *width: 859.9999999999998px -correction;
+  *margin: 0 10.00000000000032px -correction;
+  display: inline-block;
+}
+#imgauto1 {
+  margin: 10% auto !important;
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 780px;
+  margin: 0 10.00000000000032px;
+  *width: 780px -correction;
+  *margin: 0 10.00000000000032px -correction;
+}
+#textosmenup {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 780px;
+  margin: 0 10.00000000000032px;
+  *width: 780px -correction;
+  *margin: 0 10.00000000000032px -correction;
+}
+#secfoto01 {
+  height: 440px;
+  background-image: url("../img/LEAF-m/video.png");
+}
+#secmix {
+  height: 1050px;
+}
+#contsecmix {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 940.0000000000002px;
+  margin: 0 10.00000000000032px;
+  *width: 940.0000000000002px -correction;
+  *margin: 0 10.00000000000032px -correction;
+}
+#mixsuperior {
+  min-height: 420px;
+  height: 420px;
+  background-color: #fff;
+}
+#iconmotor {
+  margin: 10% 0 0 0;
+}
+#imgsobre {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 780px;
+  margin: 0 10.00000000000032px;
+  *width: 780px -correction;
+  *margin: 0 10.00000000000032px -correction;
+  z-index: 3200;
+  position: absolute;
+  margin: -15% 0px 0px 0px;
+}
+#imgsobre img {
+  width: 780px;
+}
+#mixinferior {
+  min-height: 630px;
+  height: 630px;
+  background-color: #f5f5f5;
+}
+#iconmateriales {
+  margin: 10% 0 0 0;
+}
+#zero {
+  height: 660px;
+  background-color: #fff;
+}
+#interior {
+  height: 800px;
+  background-image: url("../img/LEAF-m/VolanteForradoEnPiel1.png");
+  color: #fff;
+}
+#secfoto02 {
+  height: 800px;
+  background-image: url("../img/LEAF-m/CarParque.png");
+}
+#ingenieria {
+  height: 800px;
+  position: relative;
+}
+#ingenieria div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%) !important;
+      -ms-transform: translateX(-50%) translateY(-50%) !important;
+          transform: translateX(-50%) translateY(-50%) !important;
+}
+#menusecu {
+  height: 440px;
+  background-color: #f5f5f5;
+}
+#limpia {
+  height: 450px;
+  background-color: #c0dce8;
+}
+#cargadores {
+  height: 600px;
+  background-image: url("../img/Leaf-y/coche.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: contains contains;
+          background-size: contains;
+}
+#autonomia {
+  height: 380px;
+  background-color: #fff;
+}
+#secfoto03 {
+  height: 490px;
+  background-image: url("../img/Leaf-y/foto.png");
+}
+#seguridad {
+  height: 760px;
+  background-image: url("../img/Leaf-y/llanta.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: contains contains;
+          background-size: contains;
+}
+#secfoto04 {
+  height: 560px;
+  background-image: url("../img/LEAF-m/volante.png");
+}
+#faq {
+  height: 800px;
+  background-color: #f5f5f5;
+}
