@@ -160,23 +160,15 @@
 						<p>Es un cargador portátil ideal para utilizarse en casa, sobretodo en la noche mientras duermes. Está ubicado en la parte trasera de Nissan LEAF y se puede conectar directamente a cualquier enchufe convencional. En aproximadamente 16 horas, se realizará una carga completa.</p>
 					</div>
 				</div>
-				<div class="carg" style="visibility:hidden;">
+				<div class="carg">
 					<div class="imgcar">
 						<img src="img/Leaf-y/cargador.png" alt="">
 					</div>
 					<div class="titcar">
 						<h2>Cargador Tipo 2</h2>
 					</div>
-					<div class="carg" style="visibility:hidden;">
-						<div class="imgcar">
-							<img src="http://placehold.it/80x80" alt="">
-						</div>
-						<div class="titcar">
-							<h2>Cargador Tipo 2</h2>
-						</div>
-						<div class="txtcar">
-							<p>Está diseñado para instalarse dentro o fuera de casa. Para utilizarlo, sólo necesitas conectar el auto y déjalo cargar. Una luz verde indicará que el proceso está terminado. Enrolla el cable y listo. Tarda de 4-8 horas para cargar completamente el auto.</p>
-						</div>
+					<div class="txtcar">
+						<p>Está diseñado para instalarse dentro o fuera de casa. Para utilizarlo, sólo necesitas conectar el auto y déjalo cargar. Una luz verde indicará que el proceso está terminado. Enrolla el cable y listo. Tarda de 4-8 horas para cargar completamente el auto.</p>
 					</div>
 				</div>
 			</div>
@@ -212,37 +204,39 @@
 						<p>A bordo, no hay malware. Nissan LEAF Integra Sistema de Asistencia de Frenado (BA), Sistema de Distribución Electrónica de Frenado (EBD) y Sistema de Frenado Antibloqueo (ABS) para hacer cada uno de tus recorridos más seguros.</p>
 					</div>
 				</div>
-				<div class="carruselseg">
-					<div class="imgcars">
-						<img src="img/Leaf-y/bolsas-de-aire.png" alt="">
+				<div id="carseg">
+					<div class="carruselseg">
+						<div class="imgcars">
+							<img src="img/Leaf-y/bolsas-de-aire.png" alt="">
+						</div>
+						<div class="titcars">
+							<h2>Bolsas de Aire</h2>
+						</div>
+						<div class="pcars">
+							<p>Como si fuera tu firewall personal, cuenta con 6 bolsas de aire frontales y laterales tipo cortina. De este modo, tu única preocupación es disfrutar el camino.</p>
+						</div>
 					</div>
-					<div class="titcars">
-						<h2>Bolsas de Aire</h2>
+					<div class="carruselseg" >
+						<div class="imgcars">
+							<img src="img/Leaf-y/bolsas-de-aire.png" alt="">
+						</div>
+						<div class="titcars">
+							<h2>Inmovilizador antirrobo</h2>
+						</div>
+						<div class="pcars">
+							<p>Este sistema es parte de la tecnología inteligente de Nissan LEAF®. En caso de que una persona intente prender el auto sin la llave registrada, se inmovilizará el motor del vehículo.</p>
+						</div>
 					</div>
-					<div class="pcars">
-						<p>Como si fuera tu firewall personal, cuenta con 6 bolsas de aire frontales y laterales tipo cortina. De este modo, tu única preocupación es disfrutar el camino.</p>
-					</div>
-				</div>
-				<div class="carruselseg" style="visibility:hidden;">
-					<div class="imgcars">
-						<img src="img/Leaf-y/bolsas-de-aire.png" alt="">
-					</div>
-					<div class="titcars">
-						<h2>Inmovilizador antirrobo</h2>
-					</div>
-					<div class="pcars">
-						<p>Este sistema es parte de la tecnología inteligente de Nissan LEAF®. En caso de que una persona intente prender el auto sin la llave registrada, se inmovilizará el motor del vehículo.</p>
-					</div>
-				</div>
-				<div class="carruselseg" style="visibility:hidden;">
-					<div class="imgcars">
-						<img src="img/Leaf-y/bolsas-de-aire.png" alt="">
-					</div>
-					<div class="titcars">
-						<h2>Kit reparación antiponchaduras</h2>
-					</div>
-					<div class="pcars">
-						<p>No hay necesidad de una llanta de refacción. Nissan LEAF® cuenta con un kit de emergencia que funciona como un sellador de neumáticos para reparar las llantas en caso de un pinchazo.</p>
+					<div class="carruselseg" >
+						<div class="imgcars">
+							<img src="img/Leaf-y/bolsas-de-aire.png" alt="">
+						</div>
+						<div class="titcars">
+							<h2>Kit reparación antiponchaduras</h2>
+						</div>
+						<div class="pcars">
+							<p>No hay necesidad de una llanta de refacción. Nissan LEAF® cuenta con un kit de emergencia que funciona como un sellador de neumáticos para reparar las llantas en caso de un pinchazo.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -317,17 +311,22 @@
 	<script type="text/javascript" src="js/animatios.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-		// $('#contcargadores > div').slick({
-		// 	// 'onAfterChange':function () {
-		// 	// 	var cursl = the_slick.slickCurrentSlide();
-		// 	// 	if (cursl == 1) {
-		// 	// 		toggleVideo();
-		// 	// 	}
-		// 	// 	else {
-		// 	// 		toggleVideo('hide');
-		// 	// 	}
-		// 	// }
-		// });
+		$('#contcargadores').slick({
+			dots: true,
+	        infinite: true,
+	        speed: 300,
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+		});
+
+		$('#carseg').slick({
+			dots: true,
+	        infinite: true,
+	        speed: 300,
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+		});
+
 		// $('#contcargadores > div').slick({
 		// 	// 'onAfterChange':function () {
 		// 	// 	var cursl = the_slick.slickCurrentSlide();
