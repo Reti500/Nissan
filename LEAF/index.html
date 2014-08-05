@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Nissan LEAF</title>
 	<link rel="stylesheet" href="css/estilos_home.css">
-	<link rel="stylesheet" href="vendors/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/flip.css">
+	<link rel="stylesheet" type="text/css" href="css/msnry.css">
 </head>
 <body>
 	<div class="container">
@@ -12,7 +13,8 @@
 			<!--Mide 100px y al inicio va sólo en blanco-->
 		</header>
 		<section id="secgif">
-			Yo soy la sección que lleva el GIF
+			<!--Yo soy la sección que lleva el GIF-->
+			
 		</section>
 		<section id="sec01">
 			<div id="contsec01">
@@ -37,7 +39,8 @@
 			</div>
 		</section>
 		<section id="secfoto01">
-			Yo soy la sección de VIDEO1 del coche
+			<!--Yo soy la sección de VIDEO1 del coche-->
+			<div></div>
 		</section>
 		<section id="secmix">
 			<div id="contsecmix">
@@ -52,12 +55,12 @@
 					<div id="iconmotor">
 						<img src="img/Leaf-y/motor-electrico.png" alt="">
 						<h3>Motor 100% eléctrico</h3>
-						<p>El motor eléctrico Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro veritatis voluptates perferendis.</p>
+						<p>El motor eléctrico conserva la emoción de manejar y el medio ambiente. Y es que, brinda el mismo desempeño que un motor de combustión interna, pero de manera silenciosa y más amigable con el planeta. </p>
 					</div>
 					<div id="iconmateriales">
 						<img src="img/LEAF-m/materialesReciclados.png" alt="">
 						<h3>Materiales reciclados</h3>
-						<p>El 90/95% [pendiente corroborar... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis laborum.</p>
+						<p>El 90/95% [pendiente corroborar dato] del auto está fabricado con plásticos reciclados provenientes de electrodomésticos y parachoques, así como telas recicladas y tela bio PET; todos ellos libres de emisiones de CO2.  </p>
 					</div>
 				</div>
 			</div>
@@ -66,10 +69,12 @@
 			Yo soy la sección de las zero emisiones	
 		</section>
 		<section id="interior">
-			Yo soy la sección de la foto interior
+			
+			<!--Yo soy la sección de la foto interior-->
 		</section>
 		<section id="secfoto02">
-			Yo soy la sección de la segunda foto del coche
+			<!--Yo soy la sección de la segunda foto del coche-->
+			
 		</section>
 		<section id="ingenieria">
 			<div>
@@ -84,28 +89,41 @@
 			<!--Mide 450px-->
 		</section>
 		<section id="cargadores">
-			<!--mide 600px -->
-			Soy la sección donde aparecen los cargadores
+			<!--Soy la sección donde aparecen los cargadores -->
+			
 		</section>
 		<section id="autonomia">
-			Yo soy la sección de la madre de autonomía
+			Yo soy la sección de autonomía
 			<!--Mide 350px-->
 		</section>
 		<section id="secfoto03">
-			Soy la tercera sección de pura foto
+			<!--Soy la tercera sección de pura foto-->
+			
 		</section>
 		<section id="seguridad">
-			Yo soy la sección de sistemas de seguridad
+			<!--Yo soy la sección de sistemas de seguridad-->
+			
 		</section>
 		<section id="secfoto04">
-			Yo soy la cuarta sección de pura foto
+			<!--Yo soy la cuarta sección de pura foto-->
+			
 		</section>
 		<a id="faq_l"></a>
 		<!-- La parte de las preguntas -->
-		<section id="faq">
-			<!--Mide 750px-->
-			Yo soy la última sección
-		</section>
+		<div id="faq">
+			<div>
+				<h1>Todo lo que quieres saber <br/>de Nissan LEAF®</h1>
+				<h4>Las nuevas tecnología conllevan mitos e inquietudes. <br/>Aquí se aclararán tus dudas.</h4>
+			</div>
+			<div id="caja">
+				<input id="words" type="text" placeholder="Escribe una pregunta o palabra relacionada con tu duda " />
+				<button></button>
+			</div>
+			
+			<div class="qcards">
+				
+			</div>
+		</div>
 		<footer>
 			<!--Mide 100px-->
 			El footer y su menu
@@ -115,7 +133,166 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.videoBG.js"></script>
 	<script type='text/javascript' src='js/spritespin.min.js' ></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#sec_foto1 div').videoBG({
+			mp4:'http://localhost:8000/LEAF/videos/leaf_video_index_dos.webmsd.mp4',
+			ogv:'http://localhost:8000/LEAF/videos/leaf_video_index_dos.webmsd.ogv',
+			webm:'http://localhost:8000/LEAF/videos/leaf_video_index_dos.webmsd.webm',
+			poster:'img/LEAF-m/video.png',
+			scale:true,
+			loop: true,
+			zIndex: 1000
+		});
+		$('#secfoto03').videoBG({
+			mp4:'videos/leaf_video_index_dos.webmsd.mp4',
+			ogv:'videos/leaf_video_index_dos.webmsd.ogv',
+			webm:'videos/leaf_video_index_dos.webmsd.webm',
+			poster:'img/LEAF-m/video.png',
+			scale:true,
+			loop: true,
+			zIndex: 1000
+		});
+		$('#secfoto04').videoBG({
+			mp4:'videos/leaf_video_index_tres.webmsd.mp4',
+			ogv:'videos/leaf_video_index_tres.webmsd.ogv',
+			webm:'videos/leaf_video_index_tres.webmsd.webm',
+			poster:'img/LEAF-m/video.png',
+			scale:true,
+			loop: true,
+			zIndex: 1000
+		});
+	});
+		
+	</script>
 	<script type='text/javascript' src='js/index.js' ></script>
+		<script type="text/javascript">
+		function setFlipClick() {
+			$('.flip-container').unbind("click");
+			$('.flip-container').click(function(event) {
+				var $t = $(this);
+				var t = $t[0];
+				t.classList.toggle("hover");
+			});
+			
+		}
+		var $container = $('.qcards');
+		// initialize
+		$container.masonry({
+		  	columnWidth: 60,
+		  	itemSelector: '.qcard'
+		});
+		setFlipClick();
+	</script>
+	<script type="text/javascript">
+		var the_qs;
+		function contains_in_tag(obj, w) {
+			var tags = obj.tags.trim().split(",");
+			for (var i = 0; i < tags.length; i++) {
+				var tag = tags[i].toLowerCase();
+				if (tag == w.toLowerCase()) {
+					return true;
+				}
+			}
+			return false;
+		}
+		function newFlipElement(p, r) {
+			// <div class='flip-container qcard'>
+			// 	<div class='flipper'>
+			// 		<div class='front-flip'>
+			// 			pregunta
+			// 		</div>
+			// 		<div class='back-flip'>
+			// 			respuesta
+			// 		</div>
+			// 	</div>
+			// </div> 
+			var root = document.createElement('div');
+			root.className = 'flip-container qcard';
+			// $p = $("<div class='flip-content'>" + 
+			// 			p + 
+			// 		"</div>");
+			// $r = $("<div class='flip-content'>" + 
+			// 			r + 
+			// 		"</div>");
+			// $frontflip = $("<div class='front-flip'></div>");
+			// $backflip = $("<div class='back-flip'></div>");
+			// $flipper = $("<div class='flipper'></div>");
+
+			// var rheight = $r.height();
+			// $(root).height(rheight);
+			// $frontflip.height(rheight);
+			// $backflip.height(rheight);
+
+			// $frontflip.append($p);
+			// $backflip.append($r);
+
+			// $(root).append($flipper);
+			// $flipper.append($frontflip).append($backflip)
+
+			$r = $("<div>" + 
+						r + 
+					"</div>");
+
+			$(root).append("<div class='flipper'>" + 
+								"<div class='front-flip'>" + 
+									"<div class='flip-content'>" + 
+									p + 
+									"</div>" +
+								"</div>" + 
+								"<div class='back-flip'>" +
+									"<div class='flip-content'>" + 
+									r + 
+									"</div>" + 
+								"</div>" + 
+							"</div>");
+			return {dom:root, height:$r.height()};
+		}
+		function find(q) {
+			var items = [];
+			var tams = [];
+			var fragment = document.createDocumentFragment();
+			var words = q.trim().split(" ");
+			$.each( the_qs, function( key, val ) {
+				
+				for (var i = 0; i < words.length; i++) {
+					var word = words[i];
+					if (contains_in_tag(val, word)) {
+						var elem = newFlipElement(val.p, val.r);
+						items.push(elem.dom);
+						tams.push(elem.height);
+						continue;
+					}
+				};
+				
+			});
+			$container.empty().masonry( 'layout' );
+			$container.append( items ).masonry( 'appended', items );
+			// for (var i = 0; i < items.length; i++) {
+			// 	var h = tams[i];
+			// 	$(items[i]).css('height',h);
+			// 	$(items[i]).children('.front-flip').css('height',h);
+			// 	$(items[i]).children('.back-flip').css('height',h);
+			// };
+			$container.masonry( 'layout' );
+			setFlipClick();
+		}
+		$('#caja > button').click(function(event) {
+			var q = $('#words').val();
+
+			if (the_qs == null) {
+				$.getJSON( "inf/p.json", function( data ) {
+					the_qs = data;
+					find(q);
+				});
+			}
+			else {
+				find(q);
+			}
+		});
+	</script>
 </body>
 </html>

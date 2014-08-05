@@ -30,12 +30,18 @@ body:after {
   src: url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.eot?1397324400");
   src: url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.eot?&1397324400#iefix") format('embedded-opentype'), url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.ttf?1397324400") format('truetype'), url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.woff?1397324400") format('woff'), url("http://www.nissan.com.mx/fonts/nissanag-medext-webfont.svg?1397324400#NissanAGMedExt") format('svg');
 }
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Regular') url("../fonts/MYRIADPRO-REGULAR.woff") format('woff');
+}
 body {
+  font-family: "Myriad Pro Regular" !important;
   margin-top: true;
   margin: 0;
   width: 100%;
   color: #000;
-  font-family: "NissanAGBold" !important;
 }
 section {
   margin: 0;
@@ -58,6 +64,12 @@ a:hover,
 a:visited {
   color: #000;
   text-decoration: none;
+}
+h1 {
+  font-size: 2.5em !important;
+}
+h4 {
+  font-size: 1em !important;
 }
 .container {
   width: 100%;
@@ -136,7 +148,11 @@ a:visited {
 }
 #secfoto01 {
   height: 440px;
-  background-image: url("../img/LEAF-m/video.png");
+  width: 100%;
+}
+#secfoto01 div {
+  height: 100%;
+  width: 100%;
 }
 #secmix {
   height: 1050px;

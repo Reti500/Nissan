@@ -11,141 +11,21 @@
 <body>
 
 	<div id="faq">
-		<h1>Todo lo que quieres saber <br/>de Nissan LEAF®</h1>
-		<h4>Las nuevas tecnología conllevan mitos e inquietudes. <br/>Aquí se aclararán tus dudas.</h4>
+		<div>
+			<h1>Todo lo que quieres saber <br/>de Nissan LEAF®</h1>
+			<h4>Las nuevas tecnología conllevan mitos e inquietudes. <br/>Aquí se aclararán tus dudas.</h4>
+		</div>
+		<div id="caja">
+			<input id="words" type="text" placeholder="Escribe una pregunta o palabra relacionada con tu duda " />
+			<button></button>
+		</div>
 		
-		<input id="words" type="text" placeholder="Escribe una pregunta o palabra relacionada con tu duda ">
-		<button><img src="img/LEAF-m/FotoGenerador.png"></button>
 		<div class="qcards">
 			
 		</div>
 	</div>
 	
 	<script type="text/javascript" src="js/masonry.pkgd.js"></script>
-	<script type="text/javascript">
-		function setFlipClick() {
-			$('.flip-container').unbind("click");
-			$('.flip-container').click(function(event) {
-				var $t = $(this);
-				var t = $t[0];
-				t.classList.toggle("hover");
-			});
-			
-		}
-		var $container = $('.qcards');
-		// initialize
-		$container.masonry({
-		  	columnWidth: 60,
-		  	itemSelector: '.qcard'
-		});
-		setFlipClick();
-	</script>
-	<script type="text/javascript">
-		var the_qs;
-		function contains_in_tag(obj, w) {
-			var tags = obj.tags.trim().split(",");
-			for (var i = 0; i < tags.length; i++) {
-				var tag = tags[i].toLowerCase();
-				if (tag == w.toLowerCase()) {
-					return true;
-				}
-			}
-			return false;
-		}
-		function newFlipElement(p, r) {
-			// <div class='flip-container qcard'>
-			// 	<div class='flipper'>
-			// 		<div class='front-flip'>
-			// 			pregunta
-			// 		</div>
-			// 		<div class='back-flip'>
-			// 			respuesta
-			// 		</div>
-			// 	</div>
-			// </div> 
-			var root = document.createElement('div');
-			root.className = 'flip-container qcard';
-			// $p = $("<div class='flip-content'>" + 
-			// 			p + 
-			// 		"</div>");
-			// $r = $("<div class='flip-content'>" + 
-			// 			r + 
-			// 		"</div>");
-			// $frontflip = $("<div class='front-flip'></div>");
-			// $backflip = $("<div class='back-flip'></div>");
-			// $flipper = $("<div class='flipper'></div>");
 
-			// var rheight = $r.height();
-			// $(root).height(rheight);
-			// $frontflip.height(rheight);
-			// $backflip.height(rheight);
-
-			// $frontflip.append($p);
-			// $backflip.append($r);
-
-			// $(root).append($flipper);
-			// $flipper.append($frontflip).append($backflip)
-
-			$r = $("<div>" + 
-						r + 
-					"</div>");
-
-			$(root).append("<div class='flipper'>" + 
-								"<div class='front-flip'>" + 
-									"<div class='flip-content'>" + 
-									p + 
-									"</div>" +
-								"</div>" + 
-								"<div class='back-flip'>" +
-									"<div class='flip-content'>" + 
-									r + 
-									"</div>" + 
-								"</div>" + 
-							"</div>");
-			return {dom:root, height:$r.height()};
-		}
-		function find(q) {
-			var items = [];
-			var tams = [];
-			var fragment = document.createDocumentFragment();
-			var words = q.trim().split(" ");
-			$.each( the_qs, function( key, val ) {
-				
-				for (var i = 0; i < words.length; i++) {
-					var word = words[i];
-					if (contains_in_tag(val, word)) {
-						var elem = newFlipElement(val.p, val.r);
-						items.push(elem.dom);
-						tams.push(elem.height);
-						continue;
-					}
-				};
-				
-			});
-			$container.empty().masonry( 'layout' );
-			$container.append( items ).masonry( 'appended', items );
-			// for (var i = 0; i < items.length; i++) {
-			// 	var h = tams[i];
-			// 	$(items[i]).css('height',h);
-			// 	$(items[i]).children('.front-flip').css('height',h);
-			// 	$(items[i]).children('.back-flip').css('height',h);
-			// };
-			$container.masonry( 'layout' );
-			setFlipClick();
-		}
-		$('#faq > button').click(function(event) {
-			var q = $('#words').val();
-
-			if (the_qs == null) {
-				$.getJSON( "inf/p.json", function( data ) {
-					the_qs = data;
-					find(q);
-				});
-			}
-			else {
-				find(q);
-			}
-		});
-	</script>
 </body>
 </html>

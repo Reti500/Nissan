@@ -32,16 +32,23 @@
 		url('http://www.nissan.com.mx/fonts/nissanag-medext-webfont.woff?1397324400') format('woff'),
 		url('http://www.nissan.com.mx/fonts/nissanag-medext-webfont.svg?1397324400#NissanAGMedExt') format('svg')
 
+@font-face 
+	font-family 'Myriad Pro Regular'
+	font-style normal
+	font-weight normal
+	src local('Myriad Pro Regular') url('../fonts/MYRIADPRO-REGULAR.woff') format('woff')
+
+
 column-width = 60px
 gutter-width = 20px
 columns = 12px
 
 body 
+	font-family "Myriad Pro Regular" !important
 	margin-top !0 
 	margin 0
 	width 100%
 	color black
-	font-family "NissanAGBold" !important
 
 section
 	margin 0
@@ -62,6 +69,12 @@ footer
 a, a:hover, a:visited
 	color black
 	text-decoration none
+
+h1 
+	font-size 2.5em !important
+
+h4 
+	font-size 1em !important
 
 .container
 	width 100%
@@ -101,7 +114,14 @@ a, a:hover, a:visited
 
 #secfoto01
 	height 440px
-	background-image url('../img/LEAF-m/video.png')
+	width 100%
+	position relative
+	div
+		height 100%
+		width 100%
+		z-index 1000
+		position absolute
+	// background-image url('../img/LEAF-m/video.png')
 
 #secmix
 	height 1050px

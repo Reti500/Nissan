@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#video {
+		height: 500px;
+		width: 350px;
+	}
+	</style>
+</head>
+<body>
+	<section id="video"></section>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.videoBG.js"></script>
+	<script type='text/javascript' src='js/spritespin.min.js' ></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#video').videoBG({
+			mp4:'videos/leaf_video_index_uno.webmsd.mp4',
+			ogv:'videos/leaf_video_index_uno.webmsd.ogv',
+			webm:'videos/leaf_video_index_uno.webmsd.webm',
+			poster:'img/LEAF-m/video.png',
+			scale:true,
+			loop: true,
+			zIndex: 1000
+		});
+	});
+		
+	</script>
+</body>
+</html>
