@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Nissan LEAF</title>
 	<link rel="stylesheet" href="css/estilos_home.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/flip.css">
 	<link rel="stylesheet" type="text/css" href="css/msnry.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css">
 </head>
 <body>
 
@@ -147,7 +149,7 @@
 
 		<section id="cargadores">
 			<div id="contcargadores">
-				<div class="carg">
+				<div class="slider carg">
 					<div class="imgcar">
 						<img src="http://placehold.it/80x80" alt="">
 					</div>
@@ -263,7 +265,7 @@
 						<a href="">
 							<li class="elmenuf">Contacto</li>
 						</a>
-						<a href="">
+						<a id="lpriv" href="legales.html">
 							<li class="elmenuf">Aviso de privacidad</li>
 						</a>
 						<a href="">
@@ -303,8 +305,23 @@
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/jquery.videoBG.js"></script>
 	<script type='text/javascript' src='js/spritespin.min.js' ></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
+		he_slick = $('#contcargadores').slick({
+			// 'onAfterChange':function () {
+			// 	var cursl = the_slick.slickCurrentSlide();
+			// 	if (cursl == 1) {
+			// 		toggleVideo();
+			// 	}
+			// 	else {
+			// 		toggleVideo('hide');
+			// 	}
+			// }
+		});
+		$("#lpriv").magnificPopup({
+			type: 'ajax'
+		});
 		$('#secfoto01').videoBG({
 			mp4:'videos/leaf_video_index_uno.webmsd.mp4',
 			ogv:'videos/leaf_video_index_uno.webmsd.ogv',
