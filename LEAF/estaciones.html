@@ -10,13 +10,33 @@
 				margin: 0px;
 				padding: 0px
 			}
+
+			#map-canvas{
+				z-index: 0;
+			}
+			form{
+				float: left;
+				position: absolute;
+				z-index: 1;
+			}
 		</style>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		
 		<script src="js/mapa.js"></script>
 		
 	</head>
 	<body>
-		<header>Aqui va la navbar</header>
+		<div>
+			<form name="form" id="search">
+				<select id="estados">
+					<option default disabled>Selecciona un estado</option>
+				</select>
+			</form>
+		</div>
 		<div id="map-canvas"></div>
+		</div>
+		
 	</body>
 </html>

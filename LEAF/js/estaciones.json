@@ -1,0 +1,77 @@
+{
+	"Estados": {
+		"Aguascalientes": {
+			"Estaciones": [
+				{"lugar": "Museo Descubre", "numero_estaciones": 1, "cargadores": 1, "direccion": "Av San Miguel S/n, Jardines del Parque, 20270 Aguascalientes", "lat": 21.856467, "lgn": -102.289489},
+				{"lugar": "Isla San Marcos", "numero_estaciones": 1, "cargadores": 2, "direccion": "Pirules, 20210 Aguascalientes", "lat": 21.8635238, "lgn": -102.3251682},
+				{"lugar": "Universidad Autónoma de Aguascalientes", "numero_estaciones": 1,"cargadores": 2, "direccion": "Av de la Convencion de 1914 Norte, Circunvalación Norte, 20020 Aguascalientes", "lat": 21.8976645, "lgn": -102.3030777},
+				{"lugar": "Parque el Cedazo", "numero_estaciones": 1, "cargadores": 2, "direccion": "Parque y Presa del Cedazo, 20256 Aguascalientes", "lat": 21.8678766, "lgn": -102.261595},
+				{"lugar": "Ficotrece", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av. 28 de Agosto s/n, Barrio de la Estación, C.P. 20259, Aguascalientes", "lat": 21.6589975, "lgn": -102.436247},
+				{"lugar": "Agencia Nissan Vamsa", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av Aguascalientes Norte 711, Trojes de Alonso, 20116 Aguascalientes", "lat": 21.9154087, "lgn": -102.2936673}
+			]
+		},
+		"BajaCalifornia": {},
+		"BajaCaliforniaSur": {},
+		"Campeche": {},
+		"Coahuila": {},
+		"Colima": {},
+		"Chiapas": {},
+		"Chihuahua": {},
+		"Sinaloa": {},
+		"DF": {
+			"Estaciones": [
+				{"lugar": "Centro Histórico", "numero_estaciones": 1, "cargadores": 4, "direccion": "República de Guatemala No. 18, Centro, Cuauhtémoc, 06020 Ciudad de México", "lat": 19.435210, "lgn": -99.132988},
+				{"lugar": "Corporativo Nissan (Insurgentes)", "numero_estaciones": 1, "cargadores": 6, "direccion": "Insurgentes Sur No. 1958, Col. Florida, Álvaro Obregón, C.P. 01030", "lat": 19.3523527, "lgn": -99.1856946},
+				{"lugar": "Centro Comercial Patio Universidad", "numero_estaciones": 1, "cargadores": 4, "direccion": "Av. Popocatepetl No. 546, Col. Xoco, Benito Juarez, C.P. 03330", "lat": 19.3644635, "lgn": -99.1667893},
+				{"lugar": "Fuente de Cibeles", "numero_estaciones": 1, "cargadores": 4, "direccion": "Av. Popocatepetl No. 546, Col. Xoco, Benito Juarez, C.P. 03330", "lat": 19.3644635, "lgn": -99.1667893},
+				{"lugar": "Agencia Nissan Soni Insurgentes", "numero_estaciones": 1, "cargadores": 2, "direccion": "Insurgentes Sur No. 1911, Guadalupe Inn, Álvaro Obregón C.P.", "lat": 19.3535074, "lgn": -99.1855928},
+				{"lugar": "Agencia Nissan Nueva Polanco", "numero_estaciones": 1, "cargadores": 1, "direccion": "Av Ejército Nacional No. 977, Irrigación, Miguel Hidalgo, 11500 Miguel Hidalgo", "lat": 19.4379035, "lgn": -99.1937992},
+				{"lugar": "Agencia Nissan Polanco Meta", "numero_estaciones": 1, "cargadores": 1, "direccion": "Czda. Gral. Mariano Escobedo No. 208, Col. Anáhuac C.P. 11320", "lat": 19.4433823, "lgn": -99.1829203},
+				{"lugar": "Agencia Nissan San Cosme", "numero_estaciones": 1, "cargadores": 1, "direccion": "Puente de Alvarado No. 57, Col. Guerrero, Cuauhtémic, C.P. 06300", "lat": 19.4392913, "lgn": -99.1535046},
+				{"lugar": "Agencia Nissan Imperio Coapa", "numero_estaciones": 1, "cargadores": 2, "direccion": "Calzada del hueso No. 661, Col. Ex hacienda Coapa, Del. Tlalpan, C.P. 14308", "lat": 19.3018097, "lgn": -99.1189878},
+				{"lugar": "Agencia Nissan Soni Universidad", "numero_estaciones": 1, "cargadores": 1, "direccion": "Eje 8 av. Popocatépetl No. 512, Col. Xoco, Del. Benito Juárez, C.P. 033302", "lat": 19.3618287, "lgn": -99.1539478},
+				{"lugar": "Agencia Nissan Interlomas", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av. Magnocentro No. 15, Col. Interlomas San Fernando, C.P. 52760, Del. Huixquilucan", "lat": 19.3618287, "lgn": -99.1539478},
+				{"lugar": "Agencia Nissan Santa Fe", "numero_estaciones": 1, "cargadores": 1, "direccion": "Av. Vasco de Quiroga No. 3880, Col. Lomas de Santa Fe, Del. Cosío, C.P. 05300", "lat": 19.3624031, "lgn": -99.2752934},
+				{"lugar": "Agencia Nissan Lomas Verdes", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av. Lomas Verdes No. 557, Col. Col. Lomas Verdes, Del. Naucalpan de Juárez,C.P. 53120", "lat":19.5057885, "lgn": -99.2573639}
+			]
+		},
+		"Durango": {},
+		"Guanajuato": {},
+		"Guerrero": {},
+		"Hidalgo": {},
+		"Jalisco": {},
+		"Mexico": {},
+		"Michoacan": {},
+		"Morelos": {
+			"Estaciones": [
+				{"lugar": "Cuernavaca: Parque Acapatzingo", "numero_estaciones": 1, "cargadores": 3, "direccion": "Av. Atlacomulco No. 13, Acapantzingo, 62440 Cuernavaca, Morelos", "lat": 18.9157572, "lgn": -99.221174}
+			]	
+		},
+		"Nayarit": {},
+		"NuevoLeon": {
+			"Estaciones":[
+				{"lugar": "Agencia Nissan Lindavista", "numero_estaciones": 1, "cargadores": 2, "direccion": "Miguel Alemán No. 210-B, Col. 10 de Mayo, Del. Guadalupe, C.P. 67130 Nuevo León", "lat": 25.6917387, "lgn": -100.2478823},
+				{"lugar": "Agencia Nissan La Fe", "numero_estaciones": 1, "cargadores": 1, "direccion": "Miguel Alemán No. 1858, Col. Villas San Cristóbal, , Del. San Nicolás de los Garza, C.P. 66478, Nuevo León", "lat": 25.7101734, "lgn": -100.2364161},
+				{"lugar": "Agencia Nissan Barragan", "numero_estaciones": 1, "cargadores": 1, "direccion": "Av. Manuel L. Barragan No. 6744 oficina 2-D, Col. Las Misiones,, Del. Berriozábal, C.P. 66451,Nuevo León", "lat": 25.7635321, "lgn": -100.3030305},
+				{"lugar": "Agencia Nissan Gonzalitos", "numero_estaciones": 1, "cargadores": 1, "direccion": "Avenida Gonzalitos No. 655, Col. Fraccionamiento Gonzalitos, Del. Monterrey, C.P. 64020, Nuevo León", "lat": 25.7481109, "lgn": -100.2889527},
+				{"lugar": "Agencia Nissan Santa Catarina", "numero_estaciones": 1, "cargadores": 1, "direccion": "Blvd. Diaz Ordaz No. 150 Pte., Col. La Fama, Del. Santa Catarina, C.P. 66100, Nuevo León", "lat": 25.6711817, "lgn": -100.3810392},
+				{"lugar": "Agencia Nissan Cumbres", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av. Paseo de los Triunfadores No. 3231, Col. Cumbres 8vo. Sector, Del. Monterrey, C.P. 64610, Nuevo León", "lat": 25.726772, "lgn": -100.391196},
+				{"lugar": "Agencia Nissan Chipinque", "numero_estaciones": 1, "cargadores": 1, "direccion": "Av. Vasconcelos No.325, Col. Del Valle, Del. San Pedro Garza García, C.P. 66220, Nuevo León", "lat": 25.655953, "lgn": -100.387118},
+				{"lugar": "Agencia Nissan Fundadores", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av. Fundadores No. 951, Col. Valle Oriente, Del. San Pedro Garza García, C.P. 66269, Nuevo León", "lat": 25.6378926, "lgn": -100.3181035},
+				{"lugar": "Agencia Nissan Toreo Contry", "numero_estaciones": 1, "cargadores": 1, "direccion": "Av. Eugenio Garza Sada No. 600 Sur, Col. Arroyo Seco, Del. Monterrey, C.P. 64740, Nuevo León", "lat": 25.6093229, "lgn": -100.2699973}
+			]
+			},
+		"Oaxaca": {},
+		"Puebla": {},
+		"Queretaro": {},
+		"QuintanaRoo": {},
+		"SanLuisPotosi": {},
+		"Sonora": {},
+		"Tabasco": {},
+		"Tamaulipas": {},
+		"Tlaxcala": {},
+		"Veracruz": {},
+		"Yucatan": {},
+		"Zacatecas": {}
+	}
+}
