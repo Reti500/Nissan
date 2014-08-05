@@ -1,0 +1,126 @@
+@font-face{font-family:'Myriad Pro Regular';font-style:normal;font-weight:normal;src:local('Myriad Pro Regular') url("../fonts/MYRIADPRO-REGULAR.woff") format('woff')}
+.header {
+    width: 800px;
+    max-width: 1600px;
+    height: 83px;
+    position: relative;
+    box-shadow: 0px 4px 0px #e9e5db;
+    margin: 0 auto;
+}
+#logo {
+    margin-left: 30px;
+    display: inline;
+}
+#headermenu {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    background-color: #fff;
+    display: inline;
+    right: 10px;
+}
+.headermenu {
+    width: 600px;
+    height: 35px;
+    
+    margin-left: 10px;
+    display: inline;
+    
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #999999!important;
+}
+.headermenu:hover {
+    color: #666666!important;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* para el footer*/
+
+html, body {
+    height: 100%;
+    font-family: 'Myriad Pro Regular';
+}
+#page-wrap {
+    width: 100%;
+    margin: auto;
+    height: 450px;
+    position: relative;
+}
+#festa {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    padding: 10px;
+    z-index: 100;
+    border: 1px solid #ccc;
+}
+#festa button {
+    background-color: #c71444;
+    border-size: 0.5px;
+    color: white;
+    margin: 10px;
+}
+#page-wrap:after {
+    width: 100%;
+    height: 150px;
+    display: block;
+    clear: both;
+}
+#footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #00202e;
+}
+#footer > div {
+    position: relative;
+    width: 800px;
+    max-width: 1600px;
+    height: 50px;
+    margin: 0 auto;
+}
+#footer > * {
+}
+.footermenu {
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #003f5b;
+}
+#lkns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.footer_social {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.footer_social a {
+    margin: 6px;
+}
+.footer_social img {
+    width: 25px;
+}

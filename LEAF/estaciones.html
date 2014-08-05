@@ -7,19 +7,12 @@
 		<style>
 			html, body, #map-canvas {
 				height: 100%;
+				width: 100%;
 				margin: 0px;
 				padding: 0px
 			}
-
-			#map-canvas{
-				z-index: 0;
-			}
-			form{
-				float: left;
-				position: absolute;
-				z-index: 1;
-			}
 		</style>
+		<link rel="stylesheet" type="text/css" href="css/estilos_mapa.css">
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -28,14 +21,48 @@
 		
 	</head>
 	<body>
-		<div>
-			<form name="form" id="search">
-				<select id="estados">
-					<option default disabled>Selecciona un estado</option>
-				</select>
-			</form>
+
+		<div class="header">
+			<a id="logo" href="#" ><img src="logo.png"></a>
+			<div id="headermenu">
+				<a href="#" class="headermenu">Manéjalo</a>
+				<a href="#" class="headermenu">Especificaciones</a>
+				<a href="#" class="headermenu">Estaciones de Recarga</a>
+				<a href="#" class="headermenu">Preguntas frecuentes</a>
+			</div>
 		</div>
-		<div id="map-canvas"></div>
+		
+		<div id="page-wrap">
+			<div id="festa">
+				<p>Descubre dónde puedes cargar tu Nissan LEAF®. </p>
+				<form name="form" id="search">
+					<select id="estados">
+						<option default disabled>Selecciona un estado</option>
+					</select>
+					<button>Buscar</button>
+				</form>
+			</div>
+			<div id="map-canvas"></div>
+			</div>
+		</div>
+		
+
+		<div id="footer">
+			<div>
+				<div id="lkns">
+					<a href="#" class="footermenu">Contacto</a>
+					<a href="#" class="footermenu">Aviso de privacidad</a>
+					<a href="#" class="footermenu">Nissan México</a>
+					<a href="#" class="footermenu">Nissan © 2014</a>
+				</div>
+				<div class="footer_social">
+					<a href="#" style="margin-left: 20px;"><img src="img/social/sociales.png" ></a>
+					<a href="#" style="margin-left: 20px;"><img src="img/social/sociales 2.png" ></a>
+					<a href="#" style="margin-left: 20px;"><img src="img/social/sociales 3.png" ></a>
+					<a href="#" style="margin-left: 20px;"><img src="img/social/sociales 4.png" ></a>
+					<a href="#" style="margin-left: 20px;"><img src="img/social/sociales 5.png" ></a>
+				</div>
+			</div>
 		</div>
 		
 	</body>
