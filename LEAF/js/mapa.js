@@ -76,7 +76,7 @@ function listar_estados(data){
 function initialize() {
 	var mapOptions = {
 		zoom: 10,
-		disableDefaultUI: true,
+		disableDefaultUI: false,
 		center: new google.maps.LatLng(19.3200988,-99.1521845)
 	}
 
