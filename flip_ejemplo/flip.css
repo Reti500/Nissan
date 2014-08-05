@@ -1,0 +1,5 @@
+.flip-container{perspective:1000;border:1px solid #ccc}/* START: Accommodating for IE */
+.flip-container.hover .back{transform:rotateY(0)}.flip-container.hover .front{transform:rotateY(180deg)}/* END: Accommodating for IE */
+.flip-container,.front,.back{width:320px;height:427px}.flipper{transition:.6s;transform-style:preserve-3d;position:relative}.front,.back{backface-visibility:hidden;transition:.6s;transform-style:preserve-3d;position:absolute;top:0;left:0}.front{transform:rotateY(0);background:#90ee90;z-index:2}.back{background:#add8e6;transform:rotateY(-180deg)}/* vertical */
+.vertical.flip-container{position:relative}.vertical .back{transform:rotateX(180deg)}.vertical.flip-container .flipper{transform-origin:100% 213.5px}/* START: Accommodating for IE */
+.vertical.flip-container.hover .back{transform:rotateX(0)}.vertical.flip-container.hover .front{transform:rotateX(180deg)}/* END: Accommodating for IE */
