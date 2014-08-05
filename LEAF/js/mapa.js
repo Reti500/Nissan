@@ -63,7 +63,7 @@ function listar_estados(data){
 		
 		if(estados[key].Estaciones && estados[key].Estaciones.length > 0){
 			for(var i=0; i<estados[key].Estaciones.length; i++){
-				addMarker(new google.maps.LatLng(estados[key].Estaciones[i].lat, estados[key].Estaciones[i].lgn), estados[key].Estaciones[i].lugar);
+				addMarker(new google.maps.LatLng(estados[key].Estaciones[i].lat, estados[key].Estaciones[i].lgn), estados[key].Estaciones[i].direccion);
 			}
 			
 		}
@@ -83,11 +83,21 @@ function initialize() {
 }
 
 function addMarker(latlng, title){
-	return new google.maps.Marker({
+	var infowindow = new google.maps.InfoWindow({
+      content: title
+  	});
+
+	var marker = new google.maps.Marker({
 		position: latlng,
 		map: map,
-		title: title
+		title: "title"
 	});
+
+	google.maps.event.addListener(marker, 'click', function() {
+    	infowindow.open(map,marker);
+  	});
+
+	return marker;
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
