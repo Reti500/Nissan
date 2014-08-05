@@ -1,0 +1,47 @@
+{
+	"Estados": {
+		"Aguascalientes": {
+			"Estaciones": [
+				{}
+			]
+		},
+		"BajaCalifornia": {},
+		"BajaCaliforniaSur": {},
+		"Campeche": {},
+		"Coahuila": {},
+		"Colima": {},
+		"Chiapas": {},
+		"Chihuahua": {},
+		"Sinaloa": {},
+		"DF": {
+			"Estaciones": [
+				{"lugar": "Centro Histórico", "numero_estaciones": 1, "cargadores": 4, "direccion": "República de Guatemala No. 18, Centro, Cuauhtémoc, 06020 Ciudad de México", "lat": 19.435210, "lgn": -99.132988},
+				{"lugar": "Corporativo Nissan (Insurgentes)", "numero_estaciones": 1, "cargadores": 6, "direccion": "Insurgentes Sur No. 1958, Col. Florida, Álvaro Obregón, C.P. 01030", "lat": 19.3523527, "lgn": -99.1856946},
+				{"lugar": "Centro Comercial Patio Universidad", "numero_estaciones": 1, "cargadores": 4, "direccion": "Av. Popocatepetl No. 546, Col. Xoco, Benito Juarez, C.P. 03330", "lat": 19.3644635, "lgn": -99.1667893},
+				{"lugar": "Fuente de Cibeles", "numero_estaciones": 1, "cargadores": 4, "direccion": "Av. Popocatepetl No. 546, Col. Xoco, Benito Juarez, C.P. 03330", "lat": 19.3644635, "lgn": -99.1667893}
+			]
+		},
+		"Durango": {},
+		"Guanajuato": {},
+		"Guerrero": {},
+		"Hidalgo": {},
+		"Jalisco": {},
+		"Mexico": {},
+		"Michoacan": {},
+		"Morelos": {},
+		"Nayarit": {},
+		"NuevoLeon": {},
+		"Oaxaca": {},
+		"Puebla": {},
+		"Queretaro": {},
+		"QuintanaRoo": {},
+		"SanLuisPotosi": {},
+		"Sonora": {},
+		"Tabasco": {},
+		"Tamaulipas": {},
+		"Tlaxcala": {},
+		"Veracruz": {},
+		"Yucatan": {},
+		"Zacatecas": {}
+	}
+}
