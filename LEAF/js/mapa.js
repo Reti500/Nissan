@@ -1,6 +1,6 @@
 var map;
 
-$(document).on('ready', init());
+$(document).on('ready', init);
 
 var my_estados = {
 	"Aguascalientes":[22.0405661,-102.355039],
@@ -48,11 +48,15 @@ function init(){
 		success: function(data){listar_estados(data);},
 		error: function(){}
 	});
-
-	$("#estados").live('change', function() {
-		estado = my_estados[$(this).val()];
+	$('#festa button').click(function(event) {
+		event.preventDefault();
+		estado = my_estados[$("#estados").val()];
     	map.setCenter(new google.maps.LatLng(estado[0],estado[1]));
 	});
+	// $("#estados").live('change', function() {
+	// 	estado = my_estados[$(this).val()];
+ //    	map.setCenter(new google.maps.LatLng(estado[0],estado[1]));
+	// });
 
 }
 
@@ -90,7 +94,8 @@ function addMarker(latlng, title){
 	var marker = new google.maps.Marker({
 		position: latlng,
 		map: map,
-		title: "title"
+		title: "title",
+		icon: "img/Leaf-y/pint.png"
 	});
 
 	google.maps.event.addListener(marker, 'click', function() {

@@ -11,6 +11,8 @@
 <body>
 
 	<div id="preguntas">
+		<h1>Todo lo que quieres saber <br/>de Nissan LEAF®</h1>
+		<h4>Las nuevas tecnología conllevan mitos e inquietudes. <br/>Aquí se aclararán tus dudas.</h4>
 		<input id="words" type="text" >
 		<button>Buscar</button>
 		<div class="qcards">
@@ -105,7 +107,7 @@
 			var items = [];
 			var tams = [];
 			var fragment = document.createDocumentFragment();
-			var words = q.trim().split(",");
+			var words = q.trim().split(" ");
 			$.each( the_qs, function( key, val ) {
 				
 				for (var i = 0; i < words.length; i++) {

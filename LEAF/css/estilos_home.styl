@@ -1,22 +1,427 @@
 @import '../vendors/css/grid.styl'
 
-@column-width 60
-@gutter-width 20
-@columns 12
+@font-face
+	font-family "NissanAGBold"
+	src url('http://www.nissan.com.mx/fonts/nissanag-bold-webfont.eot?1397324400')
+	src url('http://www.nissan.com.mx/fonts/nissanag-bold-webfont.eot?&1397324400#iefix') format('embedded-opentype'),
+    	url('http://www.nissan.com.mx/fonts/nissanag-bold-webfont.ttf?1397324400') format('truetype'),
+    	url('http://www.nissan.com.mx/fonts/nissanag-bold-webfont.woff?1397324400') format('woff'),
+    	url('http://www.nissan.com.mx/fonts/nissanag-bold-webfont.svg?1397324400#NissanAGBold') format('svg')
+
+@font-face 
+	font-family "NissanAGMedium"
+	src url('http://www.nissan.com.mx/fonts/nissanag-medium-webfont.eot?1397324400')
+	src url('http://www.nissan.com.mx/fonts/nissanag-medium-webfont.eot?&1397324400#iefix') format('embedded-opentype'),
+		url('http://www.nissan.com.mx/fonts/nissanag-medium-webfont.ttf?1397324400') format('truetype'),
+		url('http://www.nissan.com.mx/fonts/nissanag-medium-webfont.woff?1397324400') format('woff'),
+		url('http://www.nissan.com.mx/fonts/nissanag-medium-webfont.svg?1397324400#NissanAGMedium') format('svg')
+
+@font-face 
+	font-family "NissanAGRegular"
+	src url('http://www.nissan.com.mx/fonts/nissanag-regular-webfont.eot?1397324400')
+	src url('http://www.nissan.com.mx/fonts/nissanag-regular-webfont.eot?&1397324400#iefix') format('embedded-opentype'),
+		url('http://www.nissan.com.mx/fonts/nissanag-regular-webfont.ttf?1397324400') format('truetype'),
+		url('http://www.nissan.com.mx/fonts/nissanag-regular-webfont.eot.woff?1397324400') format('woff'),
+		url('http://www.nissan.com.mx/fonts/nissanag-regular-webfont.svg?1397324400#NissanAGRegular') format('svg')
+
+@font-face
+	font-family:"NissanAGMedExt"
+	src url('http://www.nissan.com.mx/fonts/nissanag-medext-webfont.eot?1397324400')
+	src url('http://www.nissan.com.mx/fonts/nissanag-medext-webfont.eot?&1397324400#iefix') format('embedded-opentype'),
+		url('http://www.nissan.com.mx/fonts/nissanag-medext-webfont.ttf?1397324400') format('truetype'),
+		url('http://www.nissan.com.mx/fonts/nissanag-medext-webfont.woff?1397324400') format('woff'),
+		url('http://www.nissan.com.mx/fonts/nissanag-medext-webfont.svg?1397324400#NissanAGMedExt') format('svg')
+
+@font-face 
+	font-family 'Myriad Pro Regular'
+	font-style normal
+	font-weight normal
+	src local('Myriad Pro Regular') url('../fonts/MYRIADPRO-REGULAR.woff') format('woff')
+
+
+column-width = 60px
+gutter-width = 20px
+columns = 12
+total-width = 100%
 
 body 
+	font-family "Myriad Pro Regular" !important
 	margin-top !0 
-	margin 0
-
-.container
-	width 960px
-	max-width 960px
-	margin 0 auto 
+	margin 0 auto !important 
+	width 100%
+	color black
 
 section
-	column(12)
-	margin 0
-	background-color black
-	color white
-	height 800px
+	margin 0 auto !important 
+	color black
+
+header
+	min-height 90px
+	heigth 90px
+	max-height 
+	max-width 960px
+	color #f5f5f5
+	margin 0 auto !important
+
+footer
+	min-height 100px
+	height 100px 
+	background-color #00202e
+	color #fff
 	
+a, a:hover, a:visited
+	color black
+	text-decoration none
+
+h1 
+	font-size 2.5em !important
+
+h4 
+	font-size 1em !important
+
+
+
+/*CLASES*/
+.container
+	width 100%
+	max-width 1600px
+	margin 0 auto !important
+
+.elemenup
+	display inline-block
+	margin 0 2%
+
+.carg 
+	column(6)
+	offset(6)
+	text-align center
+	margin-top 7%
+
+
+.carruselseg
+	column(5)
+	offset(7)
+	text-align center 
+
+.elmenuf
+	display inline-block
+	margin 0 2%
+	color #fff 
+
+.pie 
+	display inline-block
+
+
+
+/*IDS*/
+/*Head*/
+#conthead
+	column(12)
+	max-width 960px
+	margin 0 auto
+
+#logo
+	column(1)
+
+#menup
+	column(10)
+	text-align center 
+	margin-top 4%
+
+#menuli
+	display inline-block
+	column(10)
+
+#menupreg
+	column(2)
+/*Seccion 1 (100% eléctrico)*/
+#sec01
+	height 390px
+	background-color #f5f5f5
+#contsec01
+	column(10)
+	offset(1)
+	text-align center
+	h1
+		margin 10% 0 0 0
+
+#textosmenup 
+	column(10)
+	h1
+		margin 0 auto
+	p
+		margin 0 auto 	
+
+/*Primer vídeo*/
+#secfoto01
+	height 440px
+	width 100%
+	// background-image url('../img/LEAF-m/video.png')
+
+//Nuevo Gadget (Secc Mix con dos fondos e imagen sobre)
+#secmix
+	height 1050px
+
+#contsecmix
+	column(12)
+
+#mixsuperior
+	min-height 420px
+	height 420px
+	background-color #fff
+
+#nuevogad
+	text-align center
+	column(8)
+	offset(2)
+
+#txtgad
+	text-align center
+	column(10)
+	offset(1)
+
+#iconmotor
+	padding 12% 0 0 0
+
+#imgmotor
+	column(11)
+	offset(1)
+
+#titmotor
+	column(11)
+	offset(1)
+
+#txtmotor
+	column(6)
+	offset(1)
+
+#imgmateriales
+	column(2)
+	offset(1)
+
+#titmateriales
+	column(3)
+	offset(8)
+
+#txtmateriales
+	column(7)
+	offset(4)
+
+#imgsobre
+	column(12)
+	z-index 3200
+	position absolute
+	margin -15% 0px 0px 0px
+
+#imgsobre img
+	column(10)
+	offset(2)
+
+#mixinferior
+	min-height 630px
+	height 630px
+	background-color #f5f5f5
+
+#iconmateriales
+	margin 10% 0 0 0
+
+//Video Youtube
+#youtube
+	height 670px
+	min-height 670px
+	border-bottom-style solid 
+	border-bottom-color #f5f5f5
+	border-bottom-width 5px 
+
+#contyoutube
+	column(12)
+	height 100%
+	background-color #fff 
+	p 
+		column(6)
+		offset(3)
+#videoyt
+	column(10)
+	offset(1)
+	text-align center
+#videoyt iframe
+	margin 10% 0 
+	
+//Seccion Zero Emisiones
+#zero
+	height 780px
+	min-height 780px
+	background-color #fff
+
+#contseczero
+	column(12)
+
+#imgzero
+	text-align center 
+	column(6)
+	offset(3)
+	margin-top 7%
+
+#txtzero
+	text-align center
+	column(10)
+	offset(1)
+	margin-top 5%
+
+#triangulo
+
+	column(6)
+	offset(3)
+	height: 360px;
+	width: 460px;
+	background-size contain
+	background-repeat no-repeat
+	margin-top 7%
+	background-image: url('../img/LEAF-m/TrianguloAleronTrasero3.png')
+
+#triangulo:hover
+	background-image: url('../img/LEAF-m/TrianguloAleronTrasero2.png')
+
+#lucesLED
+	text-align center
+	column(4)
+	offset(4)
+	margin-top 0
+
+//Fotota
+#secfoto02
+	height 650px
+	background-image url('../img/LEAF-m/CarParque.png')
+
+//Gadgets
+#gadgets 
+	height 450px
+	min-height 450px
+
+#contgad
+	column(12)
+
+#modob
+	text-align center
+	column(4)
+	offset(1)
+	margin-top 10%
+
+#modoeco
+	text-align center
+	column(4)
+	offset(2)
+	margin-top 10%
+
+#limpia
+	height 365px
+	max-height 365px
+	background-image url('../img/Leaf-y/barra-azul.png')
+	background-size contain 
+	background-repeat no-repeat
+	margin 0 auto 
+
+#contseclimpia
+	text-align center 
+	column(12)
+
+#titlimpia
+	column(4)
+	offset(4)
+	margin-top 7%
+	
+#txtlimpia
+	column(6)
+	offset(3)
+
+//Cargadores y tipos de cargador 
+#cargadores
+	height 600px
+	position relative
+	background-image url('../img/Leaf-y/coche.png')
+	background-color #f5f5f5
+	background-repeat no-repeat
+	background-size contains
+
+#contcargadores
+	column(12)
+
+
+//Autonomia secc mini
+#autonomia
+	height 390px
+	min-height 390px
+	background-color #fff
+	position absolute
+
+#contauton
+	column(12)
+
+#imgauton
+	text-align center  
+	column(2)
+	offset(1)
+
+#imgauton img
+	margin-top 65%
+
+#textos
+	column(8)
+
+#titauton h2
+	margin-top 12%
+
+#txtauton p
+	margin-top 0
+
+
+//Video 
+#secfoto03
+	height 490px
+	// background-image url('../img/Leaf-y/foto.png')
+
+
+//Seguridad y sistemas de protección
+#seguridad
+	height 760px
+	background-image url('../img/Leaf-y/llanta.png')
+	background-repeat no-repeat
+	background-size contains
+
+#contseg
+	column(12)
+
+#txtseg
+	column(5)
+	offset(7)
+
+//Video 
+#secfoto04
+	height 560px
+	// background-image url('../img/LEAF-m/volante.png')
+
+//Footer 
+#contfoot
+	color #fff
+	column(12)
+	display inline-block
+
+#menufoot
+	column(7)
+	text-align left 
+	margin-top 4%
+#menufoot ul
+	column(7)
+	font-size 0.85em 
+	
+#sociales
+	column(5)
+	margin-top 3%
+#sociales a
+	display inline-block
+#sociales ul 
+	column(5)
+#faq
+	height 800px
+	background-color #f5f5f5
+
