@@ -9,7 +9,11 @@ autonomia = {
 };
 bateria = "";
 caja = "";
-cargadores = "";
+cargadores = {
+	"path": path + "/cargadores/cargadores_",
+	tam: 71,
+	anim: false
+};
 chip = "";
 conexion = {
 	"path": path + "/conexion/conexion_",
@@ -47,6 +51,21 @@ function init(){
  //  		$("#imgmotor img").attr('src', nextImage);
 	// }, 42);
 
+	$("#secmix #contsecmix #mixinferior")
+		.mouseover(function(){
+			if(!conexion.anim){
+				myAnim = setInterval(function(){
+					conexion.anim = true;
+					$("#secmix #contsecmix #mixinferior #iconmotor img").attr('src', nextImage(conexion));
+				}, 42);
+			}
+		})
+		.mouseout(function(){
+			index = 0;
+			conexion.anim = false;
+			clearInterval(myAnim);
+		});
+
 	$("#secmix #contsecmix #mixinferior #iconmateriales")
 		.mouseover(function(){
 			console.log("over");
@@ -58,21 +77,6 @@ function init(){
 		.mouseout(function(){
 			index = 0;
 			// clearInterval(myAnim);
-		});
-
-	$("#secmix #contsecmix #mixinferior")
-		.mouseover(function(){
-			if(!conexion.anim){
-				myAnim = setInterval(function(){
-					conexion.anim = true;
-					$("#secmix #contsecmix #mixinferior img").attr('src', nextImage(conexion));
-				}, 42);
-			}
-		})
-		.mouseout(function(){
-			index = 0;
-			conexion.anim = false;
-			clearInterval(myAnim);
 		});
 
 	$("#modob")
@@ -117,6 +121,21 @@ function init(){
 		.mouseout(function(){
 			index = 0;
 			autonomia.anim = false;
+			clearInterval(myAnim);
+		});
+
+	$("#contcargadores #contcargadores-a #imagen")
+		.mouseover(function(){
+			if(!cargadores.anim){
+				myAnim = setInterval(function(){
+					cargadores.anim = true;
+					$("#contcargadores #contcargadores-a #imagen img").attr('src', nextImage(cargadores));
+				}, 42);
+			}
+		})
+		.mouseout(function(){
+			index = 0;
+			cargadores.anim = false;
 			clearInterval(myAnim);
 		});
 
