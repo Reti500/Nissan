@@ -44,14 +44,13 @@ function init(){
 		dataType: "json",
 		url: "js/estaciones.json",
 		data: {},
-		beforeSend: function(){console.log("marica");},
+		beforeSend: function(){},
 		success: function(data){listar_estados(data);},
-		error: function(){console.log("Error");}
+		error: function(){}
 	});
 
 	$("#estados").live('change', function() {
 		estado = my_estados[$(this).val()];
-		console.log(estado);
     	map.setCenter(new google.maps.LatLng(estado[0],estado[1]));
 	});
 
@@ -74,7 +73,7 @@ function listar_estados(data){
 
 function initialize() {
 	var mapOptions = {
-		zoom: 4,
+		zoom: 10,
 		disableDefaultUI: true,
 		center: new google.maps.LatLng(19.3200988,-99.1521845)
 	}
@@ -84,7 +83,6 @@ function initialize() {
 }
 
 function addMarker(latlng, title){
-	console.log(latlng);
 	return new google.maps.Marker({
 		position: latlng,
 		map: map,
