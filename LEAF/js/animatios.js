@@ -2,7 +2,11 @@ $(document).on('ready', init());
 
 // conexion = "img/anim/conexion/iconos 2_0036";
 path = "img/anim";
-autonomia = "img/anim/autonomia/iconos 2_00504";
+autonomia = {
+	"path": path + "/autonomia/autonomia_",
+	tam: 71,
+	anim: false
+};
 bateria = "";
 caja = "";
 cargadores = "";
@@ -14,29 +18,25 @@ conexion = {
 }
 escuadra = "";
 flechas = "";
-modob = "";
-modoeco = "";
+modob = {
+	path: path + "/modob/modob_",
+	tam: 71,
+	anim: false
+};
+modoeco = {
+	path: path + "/modoeco/modoeco_",
+	tam: 71,
+	anim: false
+};
 nube = "";
 plug = "";
 reciclar = "";
-seguridad = "";
+seguridad = {
+	path: path + "/seguridad/seguridad_",
+	tam: 71,
+	anim: false
+};
 spots = "";
-
-autonomia_num = "";
-bateria_num = "";
-caja_num = "";
-cargadores_num = "";
-chip_num = "";
-conexion_num = 25;
-escuadra_num = "";
-flechas_num = "";
-modob_num = "";
-modoeco_num = "";
-nube_num= "";
-plug_num = "";
-reciclar_num = "";
-seguridad_num = "";
-spots_num = "";
 
 var index = 0;
 
@@ -60,14 +60,12 @@ function init(){
 			// clearInterval(myAnim);
 		});
 
-	$("#secmix #contsecmix #imgsobre")
+	$("#secmix #contsecmix #mixinferior")
 		.mouseover(function(){
-			console.log("over44");
 			if(!conexion.anim){
 				myAnim = setInterval(function(){
-					console.log("interval");
 					conexion.anim = true;
-					$("#imgmotor img").attr('src', nextImage(conexion));
+					$("#secmix #contsecmix #mixinferior img").attr('src', nextImage(conexion));
 				}, 42);
 			}
 		})
@@ -79,41 +77,62 @@ function init(){
 
 	$("#modob")
 		.mouseover(function(){
-			console.log("ghasd");
-			// myAnim = setInterval(function(){
-			// 	console.log("interval");
-			// 	$("#imgmotor img").attr('src', nextImage(conexion, conexion_num));
-			// }, 42);
+			if(!modob.anim){
+				myAnim = setInterval(function(){
+					modob.anim = true;
+					$("#modob img").attr('src', nextImage(modob));
+				}, 42);
+			}
 		})
 		.mouseout(function(){
 			index = 0;
-			// clearInterval(myAnim);
+			modob.anim = false;
+			clearInterval(myAnim);
 		});
 
 	$("#modoeco")
 		.mouseover(function(){
-			console.log("otra cosa");
-			// myAnim = setInterval(function(){
-			// 	console.log("interval");
-			// 	$("#imgmotor img").attr('src', nextImage(conexion, conexion_num));
-			// }, 42);
+			if(!modoeco.anim){
+				myAnim = setInterval(function(){
+					modoeco.anim = true;
+					$("#modoeco img").attr('src', nextImage(modoeco));
+				}, 42);
+			}
 		})
 		.mouseout(function(){
 			index = 0;
-			// clearInterval(myAnim);
+			modoeco.anim = false;
+			clearInterval(myAnim);
 		});
 
 	$("#imgauton")
 		.mouseover(function(){
-			console.log("otra hjadb cosa");
-			// myAnim = setInterval(function(){
-			// 	console.log("interval");
-			// 	$("#imgmotor img").attr('src', nextImage(conexion, conexion_num));
-			// }, 42);
+			if(!autonomia.anim){
+				myAnim = setInterval(function(){
+					autonomia.anim = true;
+					$("#imgauton img").attr('src', nextImage(autonomia));
+				}, 42);
+			}
 		})
 		.mouseout(function(){
 			index = 0;
-			// clearInterval(myAnim);
+			autonomia.anim = false;
+			clearInterval(myAnim);
+		});
+
+	$("#carseg #carseg-a #imagen")
+		.mouseover(function(){
+			if(!seguridad.anim){
+				myAnim = setInterval(function(){
+					seguridad.anim = true;
+					$("#carseg #carseg-a #imagen img").attr('src', nextImage(seguridad));
+				}, 42);
+			}
+		})
+		.mouseout(function(){
+			index = 0;
+			seguridad.anim = false;
+			clearInterval(myAnim);
 		});
 
 }
