@@ -75,6 +75,8 @@ $(document).ready(function() {
 		$('#cliches').fadeIn(500);
 		$('#el360').fadeOut(500);
 	});
+
+	/*
 	$('#galeria360').click(function(event) {
 		$('#carr').fadeIn(500);
 		$('#el360').fadeOut();
@@ -82,7 +84,8 @@ $(document).ready(function() {
 	    	$('#carr').fadeOut(500);
 	    	$('close').unbind('click');
 	    });
-	});
+	});*/
+
 	$('#el360').fadeOut();
 	$('#destruir').fadeOut();
 	$('#cliches').fadeOut();
@@ -95,10 +98,17 @@ $(document).ready(function() {
     	$('#el360').fadeIn(500);
     	$('close').unbind('click');
     });
+
+    /*
     $('#botoncarr').click(function() {
     	$('#carr').fadeOut(500);
     	$('#el360').fadeIn(500);
     });
+
+*/
+
+
+
 	$('.option').magnificPopup({
 		callbacks: {
 		    open: function() {
@@ -131,3 +141,17 @@ $(document).ready(function() {
 	fill_social_data();
 	
 });
+
+function cambiar360() {
+	$('#carr').fadeOut(500);
+    $('#el360').fadeIn(500);
+}
+
+function cambiarSpot() {
+	$('#carr').fadeIn(500);
+		$('#el360').fadeOut();
+	    $('.close').click(function() {
+	    	$('#carr').fadeOut(500);
+	    	$('close').unbind('click');
+	    });
+}
