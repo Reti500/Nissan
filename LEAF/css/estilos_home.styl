@@ -46,19 +46,21 @@ columns = 12
 body 
 	font-family "Myriad Pro Regular" !important
 	margin-top !0 
-	margin 0
+	margin 0 auto !important 
 	width 100%
 	color black
 
 section
-	margin 0
+	margin 0 auto !important 
 	color black
 
 header
 	min-height 90px
 	heigth 90px
-	max-height 90px
+	max-height 
+	max-width 960px
 	color #f5f5f5
+	margin 0 auto !important
 
 footer
 	min-height 100px
@@ -82,7 +84,7 @@ h4
 .container
 	width 100%
 	max-width 1600px
-	margin 0 auto 
+	margin 0 auto !important
 
 .elemenup
 	display inline-block
@@ -114,6 +116,8 @@ h4
 /*Head*/
 #conthead
 	column(12)
+	max-width 960px
+	margin 0 auto
 
 #logo
 	column(1)
@@ -257,8 +261,9 @@ h4
 	column(12)
 
 #imgzero
-	column(4)
-	offset(4)
+	text-align center 
+	column(6)
+	offset(3)
 	margin-top 7%
 
 #txtzero
@@ -268,8 +273,9 @@ h4
 	margin-top 5%
 
 #triangulo
-	column(6)
-	offset(3)
+	text-align center
+	column(8)
+	offset(2)
 	margin-top 7%
 
 #lucesLED
