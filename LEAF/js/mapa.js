@@ -23,18 +23,18 @@ var my_estados = {
 	"Morelos": [18.7318963,-99.0633631],
 	"Nayarit": [21.8432765,-104.7403113],
 	"NuevoLeon": [25.4817892,-99.8141511],
-	"Oaxaca": {},
-	"Puebla": {},
-	"Queretaro": {},
-	"QuintanaRoo": {},
-	"SanLuisPotosi": {},
-	"Sonora": {},
-	"Tabasco": {},
-	"Tamaulipas": {},
-	"Tlaxcala": {},
-	"Veracruz": {},
-	"Yucatan": {},
-	"Zacatecas": {}
+	"Oaxaca": [17.1577833,-96.2099322],
+	"Puebla": [19.3507403,-97.8971323],
+	"Queretaro": [20.8430849,-99.821474],
+	"QuintanaRoo": [19.7401578,-88.0125033],
+	"SanLuisPotosi": [22.8251348,-100.3165623],
+	"Sonora": [29.4067974,-111.7381017],
+	"Tabasco": [17.94917,-92.5533447],
+	"Tamaulipas": [24.9435236,-98.6440788],
+	"Tlaxcala": [19.4161981,-98.1689873],
+	"Veracruz": [19.1788058,-96.1624092],
+	"Yucatan": [20.5805196,-88.9702046],
+	"Zacatecas": [23.0831271,-102.5352127]
 }
 
 function init(){
@@ -44,14 +44,13 @@ function init(){
 		dataType: "json",
 		url: "js/estaciones.json",
 		data: {},
-		beforeSend: function(){console.log("marica");},
+		beforeSend: function(){},
 		success: function(data){listar_estados(data);},
-		error: function(){console.log("Error");}
+		error: function(){}
 	});
 
 	$("#estados").live('change', function() {
 		estado = my_estados[$(this).val()];
-		console.log(estado);
     	map.setCenter(new google.maps.LatLng(estado[0],estado[1]));
 	});
 
@@ -74,7 +73,7 @@ function listar_estados(data){
 
 function initialize() {
 	var mapOptions = {
-		zoom: 4,
+		zoom: 10,
 		disableDefaultUI: true,
 		center: new google.maps.LatLng(19.3200988,-99.1521845)
 	}
@@ -84,7 +83,6 @@ function initialize() {
 }
 
 function addMarker(latlng, title){
-	console.log(latlng);
 	return new google.maps.Marker({
 		position: latlng,
 		map: map,
