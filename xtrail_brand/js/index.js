@@ -86,6 +86,7 @@ $(document).ready(function() {
 	$('#el360').fadeOut();
 	$('#destruir').fadeOut();
 	$('#cliches').fadeOut();
+	$('#carr2').fadeOut();
 	$('#carr').fadeIn();
 	$("#lpriv").magnificPopup({
 		type: 'ajax'
