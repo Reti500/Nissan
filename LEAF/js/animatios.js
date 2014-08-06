@@ -15,7 +15,7 @@ var flechas = {};
 var modob = { path: path + "/modob/modob_", tam: 71, anim: false };
 var modoeco = { path: path + "/modoeco/modoeco_", tam: 71, anim: false };
 var nube = {};
-var plug = {};
+var plug = { path: path + "/plug/plug_", tam: 71, anim: false };
 var reciclar = {};
 var seguridad = { path: path + "/seguridad/seguridad_", tam: 71, anim: false };
 var spots = {};
@@ -30,10 +30,10 @@ function init(){
 	// }, 42);
 
 	$("#secmix #contsecmix #mixinferior").mouseover(function(){
-			if(!conexion.anim){
+			if(!plug.anim){
 				myAnim = setInterval(function(){
-					conexion.anim = true;
-					$("#secmix #contsecmix #mixinferior #iconmotor img").attr('src', nextImage(conexion));
+					plug.anim = true;
+					$("#secmix #contsecmix #mixinferior #iconmotor img").attr('src', nextImage(plug));
 				}, 42);
 			}
 		}).mouseout(function(){
@@ -117,6 +117,20 @@ function init(){
 			seguridad.anim = false;
 			clearInterval(myAnim);
 		});
+
+	// $("#img-bat").mouseover(function(){
+	// 		console.log("ldsfn");
+	// 		if(!bateria.anim){
+	// 			myAnim = setInterval(function(){
+	// 				bateria.anim = true;
+	// 				$("#img-bat img").attr('src', nextImage(seguridad));
+	// 			}, 42);
+	// 		}
+	// 	}).mouseout(function(){
+	// 		index = 0;
+	// 		bateria.anim = false;
+	// 		clearInterval(myAnim);
+	// 	});
 
 	// function addEvents(item, animation){
 	// 	console.log(animation);
