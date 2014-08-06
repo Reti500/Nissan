@@ -146,15 +146,17 @@ $(document).ready(function() {
 function cambiar360() {
 	$('#carr').fadeOut(500);
     $('#el360').fadeIn(500);
+    $('#carr2').fadeOut(500);
 }
 
 function cambiarSpot() {
 	$('#carr').fadeIn(500);
-		$('#el360').fadeOut();
-	    $('.close').click(function() {
-	    	$('#carr').fadeOut(500);
-	    	$('close').unbind('click');
-	    });
+	$('#el360').fadeOut();
+    $('.close').click(function() {
+    	$('#carr').fadeOut(500);
+    	$('close').unbind('click');
+    });
+    $('#carr2').fadeOut(500);
 }
 
 function cambiarDestroyAd() {
