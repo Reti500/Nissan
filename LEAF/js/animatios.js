@@ -29,7 +29,7 @@ function init(){
  //  		$("#imgmotor img").attr('src', nextImage);
 	// }, 42);
 
-	$("#imgmotor").mouseover(function(){
+	$("#imgmotor img").mouseover(function(){
 			if(!plug.anim){
 				myAnim = setInterval(function(){
 					plug.anim = true;
