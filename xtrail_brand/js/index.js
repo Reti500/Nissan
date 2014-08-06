@@ -156,3 +156,11 @@ function cambiarSpot() {
 	    	$('close').unbind('click');
 	    });
 }
+
+function cambiarDestroyAd() {
+	$('#carr2').fadeIn(500);
+	$('#el360').fadeOut();
+	$('#carr').fadeOut(500);
+    
+}
+
