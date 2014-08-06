@@ -72,11 +72,11 @@ button:hover
 
 /*ID's*/
 #home
-	padding-bottom 20px 
+	padding-bottom 0px 
 	background-color Black
 	color #fff
 	text-align center
-	height 915px
+	height 935px
 
 #imgder
 	position relative
@@ -119,7 +119,9 @@ de la imagen que quieren*/
 #head360
 	text-align left
 	padding 0
-	margin -3%
+	margin 0
+	margin-top 2em
+	width 960px
 
 #head360 button
 	font-family 'NissanAGRegular'
@@ -140,6 +142,7 @@ de la imagen que quieren*/
 	position relative
 	color #fff
 	margin 0 0 1em 2em
+	text-align center
 #headcomparte h1
 	font-family 'NissanAGBold'
 	font-weight bolder 
@@ -186,13 +189,15 @@ de la imagen que quieren*/
 	font-family 'NissanAGBold'
 	font-weight bolder
 	font-size 3.5em
-	margin 1em 0 0 2em
+	margin 0 auto
+	text-align center
 
 #jamas
 	font-family 'NissanAGBold'	
 	font-weight bolder	
 	font-size 2em
-	margin 0 0 0 3.5em
+	margin 0 auto
+	text-align center
 
 #divbot
 	margin 3% auto
@@ -213,54 +218,49 @@ de la imagen que quieren*/
 	font-size 1.2em
 	
 #bloq11
-	margin 0 -2px 0 0
+	margin 0 -0px 0 0
 	background-image url('../img/grid/grid1.png')
-	background-size cover
 	height 309px
 	width 41.13%
+	background-size cover
 
 #bloq12
-	margin 0 -2px
+	margin 0 -0px
 	background-image url('../img/grid/grid2.png')
-	background-size cover
+	background-size auto
 	height 309px
 	width 27.67%
 
 #bloq13
-	margin 0 -2px 0 -2.5px
+	margin 0 -0px 0 -0px
 	background-image url('../img/grid/grid3.png')
-	background-size cover
 	height 309px
 	width 31.2%
 
 #bloq21
 	background-image url('../img/grid/grid4.png')
-	background-size cover
 	height 320px
 	width 41.51%
 
 #bloq22 
 	background-image url('../img/grid/grid5.png')
-	background-size cover
 	height 320px
 	width 58.49%
+	z-index 3
 
 #bloq31 
 	background-image url('../img/grid/grid6.png')
-	background-size cover
 	height 323px
 	width 25.76%
 
 #bloq32
-	margin -80px -2px 0 -3.5px !important
+	margin -80px -0px 0 -0px !important
 	background-image url('../img/grid/grid7.png')
-	background-size cover
 	height 323px
 	width 32.44%
 
 #bloq33 
 	background-image url('../img/grid/grid8.png')
-	background-size cover
 	height 323px
 	width 41.80%
 	div 
@@ -285,7 +285,8 @@ de la imagen que quieren*/
 	padding 0
 	z-index 10
 	position relative
-	height 910px
+	height 920px
+	background-color rgba(0, 0, 0, 1)
 
 #comparte > table
 	width 80%
@@ -296,15 +297,17 @@ de la imagen que quieren*/
 	
 #footer
 	position relative
+	margin-top -1.2%
 	
 #carr
 	position absolute
 	width 910px
 	margin 0 auto
-	padding 24px
+	margin-top 2.5em
 	background-color rgba(0, 0, 0, 0.1)
 	height 800px
 	overflow hidden
+	text-align center
 	div:first-child
 		margin 0 auto
 		text-align start
@@ -312,12 +315,14 @@ de la imagen que quieren*/
 		font-family 'NissanAGBold'
 		font-weight bolder
 		font-size 3.5em
-		margin 1em 0 0 1em
 	h4
 		font-family 'NissanAGBold'
 		font-weight bolder
 		font-size 2em
-		margin 1em 0 0 1.8em
+	iframe
+		margin 0 auto
+		margin-top 15%
+		transform translateX(130px)
 		
 #carr2
 	position absolute
@@ -330,6 +335,8 @@ de la imagen que quieren*/
 	div:first-child
 		margin 0 auto
 		text-align start
+		position relative
+		top 15%
 	h2
 		font-family 'NissanAGBold'
 		font-weight bolder
@@ -340,10 +347,19 @@ de la imagen que quieren*/
 		font-weight bolder
 		font-size 2em
 		margin 1em 0 0 1.8em
+	iframe
+		margin 0 auto
+		transform translateX(130px)
+#carr2-ext
+	position absolute
+	top 50%
+	left 50%
+	transform translate(-50%)
 
 #btns_destroy 
 	width 450px
-	margin 0 auto	
+	margin 0 auto
+	transform translateX(30px)
 .close
 	background #000
 	color #fff
@@ -365,7 +381,7 @@ de la imagen que quieren*/
 	height auto 
 
 .cab360
-	display inline-block
+	margin 0 auto
 
 .pageOption
 	background-color #444
@@ -397,7 +413,10 @@ de la imagen que quieren*/
 	height auto 
 	margin -5px 0 -20px 0
 	padding 0
-	background-color #000
+	div
+		width 200px
+		margin auto auto
+		text-align center
 
 .bloq1
 	display inline-flex
@@ -406,36 +425,25 @@ de la imagen que quieren*/
 	z-index 8
 	vertical-align middle
 	background-size cover !important
-	div
-		width 200px
-		margin auto auto
-		text-align center
 
 .bloq2
 	display inline-flex
-	margin -50px 0px 0px -3.5px !important
+	margin -50px 0px 0px 0px !important
 	padding 0
 	z-index 6
 	position relative
 	vertical-align middle
 	background-size cover !important
-	div
-		width 200px
-		margin auto auto
-		text-align center
 
 .bloq3
 	display inline-flex
-	margin -80px 0px 0px -3.5px !important
+	margin -80px 0px 0px 0px !important
 	padding 0
 	z-index 4
 	position relative
 	vertical-align middle
 	background-size cover !important
 	div
-		width 200px
-		margin auto auto
-		text-align center
 		padding-top 25%
 
 .hotspot
@@ -450,7 +458,7 @@ de la imagen que quieren*/
 	display inline-block
 	font-size 1.5em
 .noMostrar
-	padding-top 22%
+	padding-top 18%
 
 .footLink
 	text-decoration none 
