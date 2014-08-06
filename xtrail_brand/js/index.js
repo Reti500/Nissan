@@ -1,18 +1,18 @@
 var soc_text = {
-	"#soc_text1":"@Nissan<br/><br/>"+
-				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+	"#soc_text1":""+
+				"Me pueden gustar muchas cosas, pero encantarme sólo una: mi #Nissan #Xtrail.<br/> <br/>"+
 				"",
-	"#soc_text2":"@Nissan<br/><br/>"+
-				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+	"#soc_text2":""+
+				"¿Alguien sabe cómo puedo despegar los ojos del nuevo Nissan Xtrail? <br/> <br/>"+
 				"",
-	"#soc_text3":"@Nissan<br/><br/>"+
-				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+	"#soc_text3":""+
+				"¿Serán todos sus gadgets o su diseño cool? <br/>Yo sólo sé que Nissan Xtrail sí está a OTRO NIVEL. <br/> <br/>"+
 				"",
-	"#soc_text4":"@Nissan<br/><br/>"+
-				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+	"#soc_text4":""+
+				"Definitivamente tengo un #crush con #Nissan #Xtrail, ¡¡quiero uno a-ho-ra!! <br/> <br/>"+
 				"",
-	"#soc_text5":"@Nissan<br/><br/>"+
-				"Cada instante que te mantienes conectado con el mundo, es una oportunidad para conocer nuevos amigos y descubrir lugares increíbles. <br/> <br/>"+
+	"#soc_text5":""+
+				"Hablando de un #NuevoLook, no puedo esperar a ya estar manejando mi #Nissan #Xtrail. <br/> <br/>"+
 				"",
 };
 function fill_social_data() {
@@ -75,6 +75,8 @@ $(document).ready(function() {
 		$('#cliches').fadeIn(500);
 		$('#el360').fadeOut(500);
 	});
+
+	/*
 	$('#galeria360').click(function(event) {
 		$('#carr').fadeIn(500);
 		$('#el360').fadeOut();
@@ -82,10 +84,12 @@ $(document).ready(function() {
 	    	$('#carr').fadeOut(500);
 	    	$('close').unbind('click');
 	    });
-	});
+	});*/
+
 	$('#el360').fadeOut();
 	$('#destruir').fadeOut();
 	$('#cliches').fadeOut();
+	$('#carr2').fadeOut();
 	$('#carr').fadeIn();
 	$("#lpriv").magnificPopup({
 		type: 'ajax'
@@ -95,10 +99,17 @@ $(document).ready(function() {
     	$('#el360').fadeIn(500);
     	$('close').unbind('click');
     });
+
+    /*
     $('#botoncarr').click(function() {
     	$('#carr').fadeOut(500);
     	$('#el360').fadeIn(500);
     });
+
+*/
+
+
+
 	$('.option').magnificPopup({
 		callbacks: {
 		    open: function() {
@@ -131,3 +142,27 @@ $(document).ready(function() {
 	fill_social_data();
 	
 });
+
+function cambiar360() {
+	$('#carr').fadeOut(500);
+    $('#el360').fadeIn(500);
+    $('#carr2').fadeOut(500);
+}
+
+function cambiarSpot() {
+	$('#carr').fadeIn(500);
+	$('#el360').fadeOut();
+    $('.close').click(function() {
+    	$('#carr').fadeOut(500);
+    	$('close').unbind('click');
+    });
+    $('#carr2').fadeOut(500);
+}
+
+function cambiarDestroyAd() {
+	$('#carr2').fadeIn(500);
+	$('#el360').fadeOut();
+	$('#carr').fadeOut(500);
+    
+}
+

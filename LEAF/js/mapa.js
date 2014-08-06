@@ -1,7 +1,5 @@
 var map;
 
-$(document).on('ready', init);
-
 var my_estados = {
 	"Aguascalientes":[22.0405661,-102.355039],
 	"BajaCalifornia":[30.359001, -115.0309215],
@@ -83,7 +81,7 @@ function initialize() {
 	}
 
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-	
+	init();
 }
 
 function addMarker(latlng, title){

@@ -16,6 +16,14 @@ var playersIDs = {
 		"yid":"-AklUIKneI0",
 		"slide":1
 	},
+	"ytvideo2":{
+		"yid":"M7lc1UVf-VE",
+		"slide":0
+	},
+	"ytvideo3":{
+		"yid":"-AklUIKneI0",
+		"slide":1
+	},
 };
 var players = {};
 
@@ -23,8 +31,8 @@ function onYouTubeIframeAPIReady() {
 	for (var i in playersIDs) {
 		var pid = playersIDs[i];
 		players[i] = new YT.Player(i, {
-	        height: '585',
-	        width: '960',
+	        height: '551',
+	        width: '900',
 	        videoId: pid.yid,
 	        events: {
 	            'onReady': onPlayerReady,
@@ -32,9 +40,15 @@ function onYouTubeIframeAPIReady() {
 	        }
 	    });
 	};
-    the_slick = $('.your_class').slick({
+    var the_slick = $('.your_class').slick({
 		'onAfterChange':function () {
 			var cursl = the_slick.slickCurrentSlide();
+			stopOthersVideos(cursl);
+		}
+	});
+	var the_slick2 = $('.your_class2').slick({
+		'onAfterChange':function () {
+			var cursl = the_slick2.slickCurrentSlide();
 			stopOthersVideos(cursl);
 		}
 	});
