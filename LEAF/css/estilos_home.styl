@@ -36,8 +36,13 @@
 	font-family 'Myriad Pro Regular'
 	font-style normal
 	font-weight normal
-	src local('Myriad Pro Regular') url('../fonts/MYRIADPRO-REGULAR.woff') format('woff')
+	src url('../fonts/MYRIADPRO-REGULAR.woff') format('woff')
 
+@font-face 
+	font-family 'Lucida Grande'
+	font-style normal
+	font-weight normal
+	src url('../fonts/LucidaGrande.ttc') format ('ttc')
 
 column-width = 60px
 gutter-width = 20px
@@ -45,11 +50,12 @@ columns = 12
 total-width = 100%
 
 body 
-	font-family "Myriad Pro Regular" !important
+	font-family "Lucida Grande" !important
 	margin-top !0 
 	margin 0 auto !important 
 	width 100%
 	color black
+	overflow-x hidden
 
 section
 	margin 0 auto !important 
@@ -62,6 +68,9 @@ header
 	max-width 960px
 	color #f5f5f5
 	margin 0 auto !important
+	background-color #FFF
+	position fixed
+	z-index 9000
 
 footer
 	min-height 100px
@@ -75,12 +84,24 @@ a, a:hover, a:visited
 
 h1 
 	font-size 2.5em !important
+	color #292929
+	font-weight lighter
+	font-family 'Myriad Pro Regular' !important
 
 h2 
 	font-size 2.0em !important
+	color #292929
+	font-weight lighter
+	font-family 'Myriad Pro Regular' !important
+
+h3
+	font-family 'Myriad Pro Regular' !important
+	font-weight lighter
 
 h4 
 	font-size 1em !important
+	font-family 'Myriad Pro Regular' !important
+	font-weight lighter
 
 
 /*CLASES*/
@@ -92,6 +113,13 @@ h4
 .elemenup
 	display inline-block
 	margin 0 2%
+	font-weight lighter
+
+.elemenup a
+	color #a4a4a4
+
+.elemenup a:hover
+	color #373737
 
 .carg
 	text-align center 
@@ -128,9 +156,11 @@ h4
 /*IDS*/
 /*Head*/
 #conthead
-	column(12)
+	/*column(12)*/
 	max-width 960px
 	margin 0 auto
+	position fixed
+	background-color #FFF
 
 #logo
 	column(1)
@@ -258,9 +288,10 @@ h4
 	column(12)
 	height 100%
 	background-color #fff 
-	p 
-		column(6)
-		offset(3)
+#contyoutube p 
+	position relative
+	width 70%
+	margin 6% 30% -4%
 #videoyt
 	column(10)
 	offset(1)
@@ -318,23 +349,33 @@ h4
 
 //Gadgets
 #gadgets 
-	height 450px
-	min-height 450px
+	height 550px
+	min-height 550px
 
 #contgad
 	column(12)
+
+#intro-contgad h2
+	width 50%
+	margin 3% auto
+	text-align center
+
+#intro-contgad p
+	width 46%
+	margin auto
+	text-align center
 
 #modob
 	text-align center
 	column(4)
 	offset(1)
-	margin-top 10%
+	margin-top 5%
 
 #modoeco
 	text-align center
 	column(4)
 	offset(2)
-	margin-top 10%
+	margin-top 5%
 
 #limpia
 	height 365px
@@ -386,6 +427,9 @@ h4
 	position relative
 
 #contauton
+	position absolute
+	top 50%
+	transform translateY(-50%)
 	column(12)
 
 #imgauton
@@ -404,7 +448,11 @@ h4
 	height 490px
 	// background-image url('../img/Leaf-y/foto.png')
 
+#titauton h2
+	letter-spacing 5px
 
+#txtauton
+	width 80%
 //Seguridad y sistemas de protección
 #seguridad
 	height 760px
@@ -437,6 +485,12 @@ h4
 #menufoot ul
 	column(7)
 	font-size 0.85em 
+
+#menufoot ul a li
+	font-weight lighter
+	color #004463
+
+#menufoot ul a li:hover
 	
 #sociales
 	column(5)

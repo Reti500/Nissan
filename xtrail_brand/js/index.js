@@ -20,48 +20,30 @@ function fill_social_data() {
 		$(id).html(soc_text[id]);
 	}
 }
+
+function cambiar360() {
+	$('#carr').fadeOut(500);
+    $('#el360').fadeIn(500);
+    $('#carr2').fadeOut(500);
+}
+
+function cambiarSpot() {
+	$('#carr').fadeIn(500);
+	$('#el360').fadeOut();
+    $('.close').click(function() {
+    	$('#carr').fadeOut(500);
+    	$('close').unbind('click');
+    });
+    $('#carr2').fadeOut(500);
+}
+
+function cambiarDestroyAd() {
+	$('#carr2').fadeIn(500);
+	$('#el360').fadeOut();
+	$('#carr').fadeOut(500);
+}
 $(document).ready(function() {
-	$("#mySpriteSpin").spritespin({
-		// path to the source images.
-		source: [
-		"360-exterior/versa360_00000.png",
-		"360-exterior/versa360_00002.png",
-		"360-exterior/versa360_00004.png",
-		"360-exterior/versa360_00006.png",
-		"360-exterior/versa360_00008.png",
-		"360-exterior/versa360_00010.png",
-		"360-exterior/versa360_00012.png",
-		"360-exterior/versa360_00014.png",
-		"360-exterior/versa360_00016.png",
-		"360-exterior/versa360_00018.png",
-		"360-exterior/versa360_00020.png",
-		"360-exterior/versa360_00022.png",
-		"360-exterior/versa360_00024.png",
-		"360-exterior/versa360_00026.png",
-		"360-exterior/versa360_00028.png",
-		"360-exterior/versa360_00030.png",
-		"360-exterior/versa360_00032.png",
-		"360-exterior/versa360_00034.png",
-		"360-exterior/versa360_00036.png",
-		"360-exterior/versa360_00038.png",
-		"360-exterior/versa360_00040.png",
-		"360-exterior/versa360_00042.png",
-		"360-exterior/versa360_00044.png",
-		"360-exterior/versa360_00046.png",
-		"360-exterior/versa360_00048.png",
-		"360-exterior/versa360_00050.png",
-		"360-exterior/versa360_00052.png",
-		"360-exterior/versa360_00054.png",
-		"360-exterior/versa360_00056.png",
-		"360-exterior/versa360_00058.png",
-		"360-exterior/versa360_00060.png",
-		"360-exterior/versa360_00062.png",
-		"360-exterior/versa360_00064.png",
-		],
-		width   : 520,  // width in pixels of the window/frame
-		height  : 327,  // height in pixels of the window/frame
-		animate : false,
-	});
+	setup360("#mySpriteSpin");
 	$('#btn_destroy').click(function(event) {
 		$('#destruir').fadeOut(500);
 	});
@@ -86,19 +68,14 @@ $(document).ready(function() {
 	    });
 	});*/
 
-	$('#el360').fadeOut();
 	$('#destruir').fadeOut();
 	$('#cliches').fadeOut();
 	$('#carr2').fadeOut();
-	$('#carr').fadeIn();
+	$('#carr').fadeOut();
+	$('#el360').fadeIn();
 	$("#lpriv").magnificPopup({
 		type: 'ajax'
 	});
-	$('.close').click(function() {
-    	$('#carr').fadeOut(500);
-    	$('#el360').fadeIn(500);
-    	$('close').unbind('click');
-    });
 
     /*
     $('#botoncarr').click(function() {
@@ -106,7 +83,7 @@ $(document).ready(function() {
     	$('#el360').fadeIn(500);
     });
 
-*/
+	*/
 
 
 
@@ -117,8 +94,8 @@ $(document).ready(function() {
 		      
 		     // this part overrides "close" method in MagnificPopup object
 		      $.magnificPopup.instance.close = function () {
-		      
-		          $('#destruir').fadeOut(500);
+		      		$('#carr2').fadeOut(500);
+		          	$('#destruir').fadeOut(500);
 					$('#cliches').fadeOut(500);
 					$('#el360').fadeIn(500);
 		      
@@ -142,27 +119,4 @@ $(document).ready(function() {
 	fill_social_data();
 	
 });
-
-function cambiar360() {
-	$('#carr').fadeOut(500);
-    $('#el360').fadeIn(500);
-    $('#carr2').fadeOut(500);
-}
-
-function cambiarSpot() {
-	$('#carr').fadeIn(500);
-	$('#el360').fadeOut();
-    $('.close').click(function() {
-    	$('#carr').fadeOut(500);
-    	$('close').unbind('click');
-    });
-    $('#carr2').fadeOut(500);
-}
-
-function cambiarDestroyAd() {
-	$('#carr2').fadeIn(500);
-	$('#el360').fadeOut();
-	$('#carr').fadeOut(500);
-    
-}
 
