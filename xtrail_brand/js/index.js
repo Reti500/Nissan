@@ -117,8 +117,8 @@ $(document).ready(function() {
 		      
 		     // this part overrides "close" method in MagnificPopup object
 		      $.magnificPopup.instance.close = function () {
-		      
-		          $('#destruir').fadeOut(500);
+		      		$('#carr2').fadeOut(500);
+		          	$('#destruir').fadeOut(500);
 					$('#cliches').fadeOut(500);
 					$('#el360').fadeIn(500);
 		      
