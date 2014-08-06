@@ -10,14 +10,6 @@
 				{"lugar": "Agencia Nissan Vamsa", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av Aguascalientes Norte 711, Trojes de Alonso, 20116 Aguascalientes", "lat": 21.9154087, "lgn": -102.2936673}
 			]
 		},
-		"BajaCalifornia": {},
-		"BajaCaliforniaSur": {},
-		"Campeche": {},
-		"Coahuila": {},
-		"Colima": {},
-		"Chiapas": {},
-		"Chihuahua": {},
-		"Sinaloa": {},
 		"DF": {
 			"Estaciones": [
 				{"lugar": "Centro Histórico", "numero_estaciones": 1, "cargadores": 4, "direccion": "República de Guatemala No. 18, Centro, Cuauhtémoc, 06020 Ciudad de México", "lat": 19.435210, "lgn": -99.132988},
@@ -35,19 +27,11 @@
 				{"lugar": "Agencia Nissan Lomas Verdes", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av. Lomas Verdes No. 557, Col. Col. Lomas Verdes, Del. Naucalpan de Juárez,C.P. 53120", "lat":19.5057885, "lgn": -99.2573639}
 			]
 		},
-		"Durango": {},
-		"Guanajuato": {},
-		"Guerrero": {},
-		"Hidalgo": {},
-		"Jalisco": {},
-		"Mexico": {},
-		"Michoacan": {},
 		"Morelos": {
 			"Estaciones": [
 				{"lugar": "Cuernavaca: Parque Acapatzingo", "numero_estaciones": 1, "cargadores": 3, "direccion": "Av. Atlacomulco No. 13, Acapantzingo, 62440 Cuernavaca, Morelos", "lat": 18.9157572, "lgn": -99.221174}
 			]	
 		},
-		"Nayarit": {},
 		"NuevoLeon": {
 			"Estaciones":[
 				{"lugar": "Agencia Nissan Lindavista", "numero_estaciones": 1, "cargadores": 2, "direccion": "Miguel Alemán No. 210-B, Col. 10 de Mayo, Del. Guadalupe, C.P. 67130 Nuevo León", "lat": 25.6917387, "lgn": -100.2478823},
@@ -60,18 +44,6 @@
 				{"lugar": "Agencia Nissan Fundadores", "numero_estaciones": 1, "cargadores": 2, "direccion": "Av. Fundadores No. 951, Col. Valle Oriente, Del. San Pedro Garza García, C.P. 66269, Nuevo León", "lat": 25.6378926, "lgn": -100.3181035},
 				{"lugar": "Agencia Nissan Toreo Contry", "numero_estaciones": 1, "cargadores": 1, "direccion": "Av. Eugenio Garza Sada No. 600 Sur, Col. Arroyo Seco, Del. Monterrey, C.P. 64740, Nuevo León", "lat": 25.6093229, "lgn": -100.2699973}
 			]
-			},
-		"Oaxaca": {},
-		"Puebla": {},
-		"Queretaro": {},
-		"QuintanaRoo": {},
-		"SanLuisPotosi": {},
-		"Sonora": {},
-		"Tabasco": {},
-		"Tamaulipas": {},
-		"Tlaxcala": {},
-		"Veracruz": {},
-		"Yucatan": {},
-		"Zacatecas": {}
+			}
 	}
 }
