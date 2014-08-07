@@ -5,18 +5,18 @@ var path = "img/anim";
 
 //------------------------------------------------------------------------------
 var autonomia = { path: path + "/autonomia/autonomia_", tam: 71, anim: false };
-var bateria = {};
-var caja = {};
+var bateria = { path: path + "/bateria/bateria_", tam: 71, anim: false};
+var caja = { path: path + "/caja/caja_", tam: 71, anim: false };
 var cargadores = { path: path + "/cargadores/cargadores_", tam: 71, anim: false };
-var chip = {};
+var chip = { path: path + "/chip/chip_", tam: 71, anim: false };
 var conexion = { path: path + "/conexion/conexion_", tam: 71, anim: false };
-var escuadra = {};
-var flechas = {};
+var escuadra = { path: path + "/escuadra/escuadra_", tam: 71, anim: false};
+var flechas = { path: path + "/flechaz/flechas_", tam: 71, anim: false };
 var modob = { path: path + "/modob/modob_", tam: 71, anim: false };
 var modoeco = { path: path + "/modoeco/modoeco_", tam: 71, anim: false };
-var nube = {};
+var nube = { path: path + "/nube/nube_", tam: 71, anim: false };
 var plug = { path: path + "/plug/plug_", tam: 71, anim: false };
-var reciclar = {};
+var reciclar = { path: path + "/reciclar/reciclar_", tam: 71, anim: false };
 var seguridad = { path: path + "/seguridad/seguridad_", tam: 71, anim: false };
 var spots = {};
 
@@ -29,11 +29,11 @@ function init(){
  //  		$("#imgmotor img").attr('src', nextImage);
 	// }, 42);
 
-	$("#secmix #contsecmix #mixinferior").mouseover(function(){
+	$("#imgmotor img").mouseover(function(){
 			if(!plug.anim){
 				myAnim = setInterval(function(){
 					plug.anim = true;
-					$("#secmix #contsecmix #mixinferior #iconmotor img").attr('src', nextImage(plug));
+					$("#imgmotor img").attr('src', nextImage(plug));
 				}, 42);
 			}
 		}).mouseout(function(){
@@ -42,15 +42,17 @@ function init(){
 			clearInterval(myAnim);
 		});
 
-	$("#secmix #contsecmix #mixinferior #iconmateriales").mouseover(function(){
-			console.log("over");
-			// myAnim = setInterval(function(){
-			// 	console.log("interval");
-			// 	$("#imgmotor img").attr('src', nextImage(conexion, conexion_num));
-			// }, 42);
+	$("#imgmateriales").mouseover(function(){
+			if(!reciclar.anim){
+				myAnim = setInterval(function(){
+					reciclar.anim = true;
+					$("#imgmateriales img").attr('src', nextImage(reciclar));
+				}, 42);
+			}
 		}).mouseout(function(){
 			index = 0;
-			// clearInterval(myAnim);
+			reciclar.anim = false;
+			clearInterval(myAnim);
 		});
 
 	$("#modob").mouseover(function(){
