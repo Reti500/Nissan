@@ -42,6 +42,13 @@ function cambiarDestroyAd() {
 	$('#el360').fadeOut();
 	$('#carr').fadeOut(500);
 }
+
+function cambiarcliches() {
+	$('#carr2').fadeIn(500);
+	$('#el360').fadeOut();
+	$('#carr').fadeOut(500);
+	$('#cliches').fadeIn(500);
+}
 $(document).ready(function() {
 	setup360("#mySpriteSpin");
 	$('#btn_destroy').click(function(event) {
@@ -54,7 +61,7 @@ $(document).ready(function() {
 	});
 	$('#volver360').click(function(event) {
 		$('#destruir').fadeIn(500);
-		$('#cliches').fadeIn(500);
+		$('#cliches').fadeOut(500);
 		$('#el360').fadeOut(500);
 	});
 
@@ -70,9 +77,10 @@ $(document).ready(function() {
 
 	$('#destruir').fadeOut();
 	$('#cliches').fadeOut();
-	$('#carr2').fadeOut();
+	$('#carr2').fadeIn();
 	$('#carr').fadeOut();
-	$('#el360').fadeIn();
+	$('#el360').fadeOut();
+	$('#cliches').fadeOut();
 	$("#lpriv").magnificPopup({
 		type: 'ajax'
 	});
