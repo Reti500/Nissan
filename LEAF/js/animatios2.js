@@ -23,7 +23,7 @@ var index = 0;
 var myAnim;
 
 function init(){
-	$("#img-bat").mouseover(function(){
+	$("#img-bat img").mouseover(function(){
 			if(!bateria.anim){
 				myAnim = setInterval(function(){
 					bateria.anim = true;
@@ -33,10 +33,11 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			bateria.anim = false;
+			$(this).attr('src', bateria.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#img-motor").mouseover(function(){
+	$("#img-motor img").mouseover(function(){
 			if(!chip.anim){
 				myAnim = setInterval(function(){
 					chip.anim = true;
@@ -46,10 +47,11 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			chip.anim = false;
+			$(this).attr('src', chip.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#img-peso").mouseover(function(){
+	$("#img-peso img").mouseover(function(){
 			if(!nube.anim){
 				myAnim = setInterval(function(){
 					nube.anim = true;
@@ -59,10 +61,11 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			nube.anim = false;
+			$(this).attr('src', nube.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#img-frenos").mouseover(function(){
+	$("#img-frenos img").mouseover(function(){
 			if(!flechas.anim){
 				myAnim = setInterval(function(){
 					flechas.anim = true;
@@ -72,10 +75,11 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			flechas.anim = false;
+			$(this).attr('src', flechas.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#img-med").mouseover(function(){
+	$("#img-med img").mouseover(function(){
 			if(!escuadra.anim){
 				myAnim = setInterval(function(){
 					escuadra.anim = true;
@@ -85,10 +89,11 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			escuadra.anim = false;
+			$(this).attr('src', escuadra.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#img-box").mouseover(function(){
+	$("#img-box img").mouseover(function(){
 			if(!caja.anim){
 				myAnim = setInterval(function(){
 					caja.anim = true;
@@ -98,6 +103,7 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			caja.anim = false;
+			$(this).attr('src', caja.path + "0.png");
 			clearInterval(myAnim);
 		});
 }

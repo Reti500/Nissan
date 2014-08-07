@@ -38,11 +38,12 @@ function init(){
 			}
 		}).mouseout(function(){
 			index = 0;
-			conexion.anim = false;
+			$(this).attr('src', plug.path + "0.png");
+			plug.anim = false;
 			clearInterval(myAnim);
 		});
 
-	$("#imgmateriales").mouseover(function(){
+	$("#imgmateriales img").mouseover(function(){
 			if(!reciclar.anim){
 				myAnim = setInterval(function(){
 					reciclar.anim = true;
@@ -52,10 +53,11 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			reciclar.anim = false;
+			$(this).attr('src', reciclar.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#modob").mouseover(function(){
+	$("#modob img").mouseover(function(){
 			if(!modob.anim){
 				myAnim = setInterval(function(){
 					modob.anim = true;
@@ -65,10 +67,11 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			modob.anim = false;
+			$(this).attr('src', modob.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#modoeco").mouseover(function(){
+	$("#modoeco img").mouseover(function(){
 			if(!modoeco.anim){
 				myAnim = setInterval(function(){
 					modoeco.anim = true;
@@ -78,10 +81,11 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			modoeco.anim = false;
+			$(this).attr('src', modoeco.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#imgauton").mouseover(function(){
+	$("#imgauton img").mouseover(function(){
 			if(!autonomia.anim){
 				myAnim = setInterval(function(){
 					autonomia.anim = true;
@@ -91,6 +95,7 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			autonomia.anim = false;
+			$(this).attr('src', autonomia.path + "0.png");
 			clearInterval(myAnim);
 		});
 
@@ -104,19 +109,21 @@ function init(){
 		}).mouseout(function(){
 			index = 0;
 			cargadores.anim = false;
+			$(this).attr('src', cargadores.path + "0.png");
 			clearInterval(myAnim);
 		});
 
-	$("#carseg #carseg-a #imagen").mouseover(function(){
+	$("#imagen2 img").mouseover(function(){
 			if(!seguridad.anim){
 				myAnim = setInterval(function(){
 					seguridad.anim = true;
-					$("#carseg #carseg-a #imagen img").attr('src', nextImage(seguridad));
+					$("#imagen2 img").attr('src', nextImage(seguridad));
 				}, 42);
 			}
 		}).mouseout(function(){
 			index = 0;
 			seguridad.anim = false;
+			$(this).attr('src', seguridad.path + "0.png");
 			clearInterval(myAnim);
 		});
 
