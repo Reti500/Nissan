@@ -371,7 +371,7 @@
 		var $container = $('.qcards');
 		// initialize
 		$container.masonry({
-		  	columnWidth: 60,
+		  	columnWidth: 80,
 		  	itemSelector: '.qcard'
 		});
 		setFlipClick();
@@ -438,7 +438,7 @@
 								"</div>" + 
 							"</div>" );
 			// fixHeight(root);
-			var vmax = Math.max(r.length*0.6, p.length);
+			var vmax = Math.max(r.length*0.7, p.length);
 			$(root).height(vmax);
 			$(root).children('.front-flip, .back-flip').height(vmax);
 			return {dom:root, height:$r.height()};
@@ -478,7 +478,7 @@
 				// 	$(items[i]).children('.back-flip').css('height',h);
 				// };
 				// $container.masonry( 'layout' );
-				var vmax = Math.max($container.height()+260, 800);
+				var vmax = Math.max($container.height()+280, 800);
 				// $('#faq').height(vmax);
 				$('#faq').animate({
 					height:vmax
